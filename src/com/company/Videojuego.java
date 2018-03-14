@@ -5,5 +5,7 @@ public class Videojuego {
     String nombre;
     String fabricante;
     String plataforma;
-    String
+    int edad;
+    int fechaPublicacion;
+    String topVentas;
 }
