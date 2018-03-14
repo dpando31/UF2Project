@@ -7,5 +7,4 @@ public class Videojuego {
     String Plataforma;
     int Edad;
     int FechaPublicacion;
-    String TopVentas;
 }
