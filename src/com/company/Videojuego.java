@@ -1,11 +1,11 @@
 package com.company;
 
 public class Videojuego {
-    int precio;
-    String nombre;
-    String fabricante;
-    String plataforma;
-    int edad;
-    int fechaPublicacion;
-    String topVentas;
+    int Precio;
+    String Nombre;
+    String Fabricante;
+    String Plataforma;
+    int Edad;
+    int FechaPublicacion;
+    String TopVentas;
 }
