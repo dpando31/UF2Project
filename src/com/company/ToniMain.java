@@ -1,9 +1,6 @@
 package com.company;
 
-public class Main {
-
+public class ToniMain {
     public static void main(String[] args) {
-
-
     }
 }
