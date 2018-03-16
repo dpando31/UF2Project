@@ -14,8 +14,40 @@ public class Developer {
 
         //METODOS
         public void setNombreDeveloper(char nombreDeveloper) {
-                nombreDeveloper = nombreDeveloper;
+                this.nombreDeveloper = new nombreDeveloper;
         }
-    }
+
+        public void setLocalizacion(char localizacion){
+                this.localizacion = new localizacion;
+        }
+
+        public void setMail(char mail){
+                this.mail = new mail;
+        }
+
+        public void setSitiosWeb (char sitiosWeb) {
+                this.sitiosWeb = new sitiosWeb;
+        }
+
+        public void setFundadores (char fundadores){
+                this.fundadores = new fundadores;
+        }
+
+        public void setProductos (char productos){
+                this.productos = new productos;
+        }
+
+        public void setNumeroEmpleados(int numeroEmpleados){
+                this.numeroEmpleados = new numeroEmpleados;
+        }
+
+        public void setFechaFundacion(int fechaFundacion) {
+                this.fechaFundacion = fechaFundacion;
+        }
+}
+}
+
+
+
 
 
