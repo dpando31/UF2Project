@@ -1,6 +1,7 @@
 package com.company.model;
 
 public class Videojuego {
+    //
     public int precio;
     public String nombre;
     public String fabricante;
