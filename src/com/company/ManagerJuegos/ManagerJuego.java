@@ -3,8 +3,14 @@ package com.company.ManagerJuegos;
 import com.company.model.Videojuego;
 
 public class ManagerJuego {
-    public void crear(){
-        Videojuego videojuego = new Videojuego();
+    Videojuego videojuego;
+    public void crear(String nombre){
+        videojuego = new Videojuego();
 
+        videojuego.nombre = nombre;
+
+    }
+    public Videojuego consultar(){
+        return videojuego;
     }
 }

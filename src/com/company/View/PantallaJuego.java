@@ -13,6 +13,8 @@ public class PantallaJuego {
         String puntuacion = scanner.nextLine();
 
         ManagerJuego managerJuego = new ManagerJuego();
-        managerJuego.crear();
+        managerJuego.crear(nombre);
+
+        managerJuego.consultar();
     }
 }
