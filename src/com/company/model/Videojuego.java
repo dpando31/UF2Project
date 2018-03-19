@@ -1,4 +1,4 @@
-package com.company.modelJuego;
+package com.company.model;
 
 public class Videojuego {
 

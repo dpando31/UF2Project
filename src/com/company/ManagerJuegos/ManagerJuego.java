@@ -1,6 +1,6 @@
 package com.company.ManagerJuegos;
 
-import com.company.modelJuego.Videojuego;
+import com.company.model.Videojuego;
 
 public class ManagerJuego {
     Videojuego videojuego;
