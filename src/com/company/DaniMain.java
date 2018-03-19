@@ -1,10 +1,11 @@
 package com.company;
 
-import com.company.model.Videojuego;
+import com.company.View.PantallaJuego;
 
 public class DaniMain {
     public static void main(String[] args) {
-
+        PantallaJuego pantallajuego = new PantallaJuego();
+        pantallajuego.mostrar();
     }
 }
 
