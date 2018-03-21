@@ -5,17 +5,16 @@ import com.company.manager.ManagerJuego;
 import java.util.Scanner;
 
 public class PantallaJuego {
-    public void mostrar(){
+    public void mostrar(ManagerJuego managerJuego){
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Pantalla Juego");
-        System.out.println("Introduce Puntuacion");
-        String puntuacion = scanner.nextLine();
+        System.out.println("Introduce nombre");
+        String nombre = scanner.nextLine();
 
 
-        ManagerJuego managerJuego = new ManagerJuego();
-        managerJuego.crear(puntuacion);
+        managerJuego.crear(nombre);
 
-        System.out.println("Alumno Creado");
+        System.out.println("Videojuego Creado");
     }
 }
