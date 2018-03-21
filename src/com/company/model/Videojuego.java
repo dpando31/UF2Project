@@ -7,6 +7,6 @@ public class Videojuego {
     public String fabricante;
     public String plataforma;
     public int edad;
-    public String fechaPublicacion;
+    public int fechaPublicacion;
 
 }
