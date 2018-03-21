@@ -2,12 +2,17 @@ package com.company;
 
 import com.company.ManagerJuegos.ManagerJuego;
 import com.company.View.PantallaJuego;
+import com.company.View.Pantalla_Listar_Juego;
 
 public class DaniMain {
     public static void main(String[] args) {
         PantallaJuego pantallajuego = new PantallaJuego();
         ManagerJuego managerJuego = new ManagerJuego();
         pantallajuego.mostrar(managerJuego);
+
+        Pantalla_Listar_Juego pantalla_listar_juego = new Pantalla_Listar_Juego();
+        pantalla_listar_juego.mostrar(managerJuego);
+
     }
 }
 
