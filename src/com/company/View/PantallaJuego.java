@@ -12,9 +12,10 @@ public class PantallaJuego {
         System.out.println("Introduce Puntuacion");
         String puntuacion = scanner.nextLine();
 
-        ManagerJuego managerJuego = new ManagerJuego();
-        managerJuego.crear(nombre);
 
-        managerJuego.consultar();
+        ManagerJuego managerJuego = new ManagerJuego();
+        managerJuego.crear(puntuacion);
+
+        System.out.println("Alumno Creado");
     }
 }
