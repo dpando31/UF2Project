@@ -1,4 +1,4 @@
-package com.company.ManagerJuegos;
+package com.company.manager;
 
 import com.company.model.Videojuego;
 

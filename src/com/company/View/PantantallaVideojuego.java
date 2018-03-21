@@ -1,10 +1,12 @@
 package com.company.View;
 
+
+
 import com.company.manager.ManagerJuego;
 
 import java.util.Scanner;
 
-public class PantallaJuego {
+public class PantantallaVideojuego {
     public void mostrar(){
         Scanner scanner = new Scanner(System.in);
 
