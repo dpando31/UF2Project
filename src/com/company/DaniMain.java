@@ -1,8 +1,8 @@
 package com.company;
 
-import com.company.ManagerJuegos.ManagerJuego;
+import com.company.ManagerJuego.ManagerJuego;
 import com.company.View.PantallaJuego;
-import com.company.View.Pantalla_Listar_Juego;
+import com.company.View.PantallaListarJuego;
 
 public class DaniMain {
     public static void main(String[] args) {
@@ -10,7 +10,7 @@ public class DaniMain {
         ManagerJuego managerJuego = new ManagerJuego();
         pantallajuego.mostrar(managerJuego);
 
-        Pantalla_Listar_Juego pantalla_listar_juego = new Pantalla_Listar_Juego();
+        PantallaListarJuego pantalla_listar_juego = new PantallaListarJuego();
         pantalla_listar_juego.mostrar(managerJuego);
 
     }
