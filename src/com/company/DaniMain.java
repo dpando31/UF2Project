@@ -1,8 +1,11 @@
 package com.company;
 
+<<<<<<< Updated upstream
 import com.company.ManagerJuego.ManagerJuego;
 import com.company.View.PantallaJuego;
 import com.company.View.PantallaListarJuego;
+=======
+>>>>>>> Stashed changes
 
 public class DaniMain {
     public static void main(String[] args) {
@@ -13,6 +16,15 @@ public class DaniMain {
         PantallaListarJuego pantalla_listar_juego = new PantallaListarJuego();
         pantalla_listar_juego.mostrar(managerJuego);
 
+<<<<<<< Updated upstream
+=======
+        juego.edad=18;
+        juego.fabricante="Bluehole";
+        juego.fechaPublicacion="20-12-2017";
+        juego.nombre= "PlayerUnknowns Battlegrounds";
+        juego.plataforma="PC";
+        juego.precio=29;
+>>>>>>> Stashed changes
     }
 }
 

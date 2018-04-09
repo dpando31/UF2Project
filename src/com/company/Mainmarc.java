@@ -1,16 +1,16 @@
 package com.company;
 
-public class Mainmarc {
-    public static void main(String[] args) {
-        Videojuego juego = new Videojuego();
-/*
-     juego.edad=18;
-     juego.fabricante="Bluehole";
-     juego.fechaPublicacion=20-12-2017;
-     juego.nombre= "PlayerUnknowns Battlegrounds";
-     juego.plataforma="PC";
-     juego.precio=29;
+import com.company.manager.Managerusuarios;
+import com.company.view.Pantalla;
 
-*/
+public class Mainmarc {
+
+    public static void main(String[] args) {
+        Managerusuarios managerusuarios = new Managerusuarios();
+        managerusuarios.crearUsuario(managerusuarios);
+        Pantalla pantalla =new Pantalla();
+        pantalla.iniciar(managerusuarios);
+
+
     }
 }
