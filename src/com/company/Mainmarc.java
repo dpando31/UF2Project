@@ -1,7 +1,7 @@
 package com.company;
 
 import com.company.manager.Managerusuarios;
-import com.company.view.Pantalla;
+import com.company.View.Pantalla;
 
 public class Mainmarc {
 

@@ -5,7 +5,7 @@ import com.company.model.Usuario;
 public class Managerusuarios {
     Usuario[] usuarios = new Usuario[100];
 
-    public void crearUsuario(Managerusuarios managerusuarios,String nombre, String contraseña) {
+    public void crearUsuario(String nombre, String contraseña) {
 
         Usuario usuario = new Usuario();
         usuario.usuario = nombre;
