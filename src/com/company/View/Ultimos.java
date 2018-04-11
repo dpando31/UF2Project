@@ -1,4 +1,4 @@
-package com.company;
+package com.company.View;
 
 public class Ultimos {
     public void ultimos(){

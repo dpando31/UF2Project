@@ -1,7 +1,5 @@
 package com.company.View;
 
-import com.company.*;
-
 import java.util.Scanner;
 
 public class Pantallaprincipal {
