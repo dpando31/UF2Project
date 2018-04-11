@@ -1,13 +1,14 @@
 package com.company;
 
 import com.company.View.PantallaListarJuego;
+import com.company.View.PantallaMenuAcceso;
 
 public class Main {
 
     public static void main(String[] args) {
-        PantallaListarJuego pantallaListarJuego = new PantallaListarJuego();
+        PantallaMenuAcceso pantallaMenuAcceso = new PantallaMenuAcceso();
 
-        pantallaListarJuego.mostrar();
+        pantallaMenuAcceso.mostrar();
 
     }
 }
