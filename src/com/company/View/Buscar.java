@@ -1,5 +1,8 @@
 package com.company.View;
 
+import com.company.Genero;
+import com.company.Plataforma;
+
 import java.util.Scanner;
 
 public class Buscar {
@@ -13,9 +16,11 @@ public class Buscar {
         String opcion = scanner.nextLine();
 
         if ("a" .equals(opcion)){
+            Genero genero =new Genero();
 
 
         } else if ("b" .equals(opcion)){
+            Plataforma plataforma =new Plataforma();
 
 
         } else if ("c" .equals(opcion)){
