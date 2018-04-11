@@ -1,5 +1,6 @@
 package com.company.manager;
 
+
 import com.company.model.Videojuego;
 
 public class ManagerJuego {
@@ -17,3 +18,4 @@ public class ManagerJuego {
         return videojuego;
     }
 }
+

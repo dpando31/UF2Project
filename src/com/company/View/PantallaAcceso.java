@@ -18,7 +18,8 @@ public class PantallaAcceso {
         boolean valido = managerUsuarios.comprobarUsuario(usuario, password);
 
         if(true == (valido)){
-            
+            Pantallaprincipal  pantallaprincipal = new Pantallaprincipal();
+            pantallaprincipal.principal();
 
         }
     }

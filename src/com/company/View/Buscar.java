@@ -1,7 +1,7 @@
 package com.company.View;
 
-import com.company.Genero;
-import com.company.Plataforma;
+import com.company.model.Genero;
+import com.company.model.Plataforma;
 
 import java.util.Scanner;
 
