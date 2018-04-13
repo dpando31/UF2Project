@@ -17,6 +17,7 @@ public class ManagerJuego {
 
 
 
+
     public Videojuego consultar(){
         return videojuego;
     }
