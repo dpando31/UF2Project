@@ -1,8 +1,7 @@
 package com.company.model;
 
 public class Videojuego {
-//<<<<<<< HEAD
-//=======
+
     int Precio;
     String Nombre;
     String Fabricante;
@@ -15,7 +14,7 @@ public class Videojuego {
     public String nombre;
     public String plataforma;
     public int precio;
-//>>>>>>> origin/master
+
 
 }
 
