@@ -6,6 +6,7 @@ import com.company.model.Videojuego;
 public class ManagerJuego {
     Videojuego videojuego;
     Videojuego[] juego = new Videojuego[50];
+
     final int FIFA = 0;
     final int PUBG = 1;
     final int Call_of_Duty = 2;
@@ -20,7 +21,6 @@ public class ManagerJuego {
     final int Assasains_Creed_Origins = 11;
     final int Minecraft = 12;
     final int A_Way_Out = 13;
-
 
 
 
