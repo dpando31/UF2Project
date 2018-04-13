@@ -1,9 +1,10 @@
 package com.company.manager;
 
+
 import com.company.model.Videojuego;
 
-public class ManagerJuegos {
-
+public class ManagerJuego {
+    Videojuego videojuego;
     Videojuego[] juego = new Videojuego[50];
 
     final int FIFA = 0;
@@ -17,21 +18,14 @@ public class ManagerJuegos {
     final int Far_Cry_5= 8;
     final int Fortnite = 9;
     final int Overwatch = 10;
-    final int Assasains_Creed_Origins = 11;
+    final int Assasssins_Creed_Origins = 11;
     final int Minecraft = 12;
     final int A_Way_Out = 13;
 
 
-    public void crear(String nombre){
 
+    public Videojuego consultar(){
+        return videojuego;
     }
-
-    public void buscar(String nombre){
-
-    }
-
-
-//    public Videojuego consultar(){
-//        return videojuego;
-//    }
 }
+
