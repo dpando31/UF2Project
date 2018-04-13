@@ -24,6 +24,7 @@ public class Buscar {
 
 
         } else if ("c" .equals(opcion)){
+            Titulo titulo = new Titulo();
 
         }
 
