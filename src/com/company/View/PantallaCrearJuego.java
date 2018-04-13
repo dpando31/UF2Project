@@ -1,11 +1,11 @@
 package com.company.View;
 
-import com.company.manager.ManagerJuego;
+import com.company.manager.ManagerJuegos;
 
 import java.util.Scanner;
 
-public class PantallaJuego {
-    public void mostrar(ManagerJuego managerJuego){
+public class PantallaCrearJuego {
+    public void mostrar(ManagerJuegos managerJuegos){
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Pantalla Juego");
@@ -13,7 +13,7 @@ public class PantallaJuego {
         String nombre = scanner.nextLine();
 
 
-        managerJuego.crear(nombre);
+        managerJuegos.crear(nombre);
 
         System.out.println("Videojuego Creado");
     }
