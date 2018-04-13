@@ -13,7 +13,13 @@ public class ManagerJuego {
     final int Dirt3 = 4;
     final int Dirt_Rally = 5;
     final int CSGO = 6;
-
+    final int GtaV = 7;
+    final int Far_Cry_5= 8;
+    final int Fornite = 9;
+    final int Overwatch = 10;
+    final int Assasains_Creed_Origins = 11;
+    final int Minecraft = 12;
+    final int A_Way_Out = 13;
 
 
 
