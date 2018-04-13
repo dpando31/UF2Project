@@ -16,8 +16,8 @@ public class PantantallaVideojuego {
 
 
         ManagerJuego managerJuego = new ManagerJuego();
-        managerJuego.crear(puntuacion);
 
-        System.out.println("Alumno Creado");
+
+
     }
 }
