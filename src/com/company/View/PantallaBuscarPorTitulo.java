@@ -1,7 +1,6 @@
 package com.company.View;
 
 
-import com.company.manager.ManagerJuegos;
 import com.company.manager.ManagerUsuarios;
 
 import java.util.Scanner;

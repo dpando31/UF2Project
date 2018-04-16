@@ -1,12 +1,12 @@
 package com.company.View;
 
-import com.company.manager.ManagerJuegos;
+import com.company.manager.ManagerJuego;
 import com.company.manager.ManagerUsuarios;
 
 import java.util.Scanner;
 
 public class PantallaRegistro {
-    public void mostrar(ManagerUsuarios managerUsuarios, ManagerJuegos managerJuegos){
+    public void mostrar(ManagerUsuarios managerUsuarios, ManagerJuego managerJuego){
         System.out.println("REGISTRO");
 
         System.out.println("Usuario:");
@@ -23,7 +23,7 @@ public class PantallaRegistro {
         System.out.println("Usuario registrado");
 
         PantallaMenuAcceso pantallaMenuAcceso = new PantallaMenuAcceso();
-        pantallaMenuAcceso.mostrar(managerJuegos,managerUsuarios);
+        pantallaMenuAcceso.mostrar(managerJuego,managerUsuarios);
 
 
     }

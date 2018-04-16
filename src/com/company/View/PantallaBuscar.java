@@ -1,12 +1,13 @@
 package com.company.View;
 
+import com.company.manager.ManagerJuego;
 import com.company.model.Genero;
 import com.company.model.Plataforma;
 
 import java.util.Scanner;
 
-public class Buscar {
-    public void buscar(){
+public class PantallaBuscar {
+    public void mostrar(ManagerJuego managerJuego){
         System.out.println("Como quieres bucar");
         System.out.println("a)Genero");
         System.out.println("b)Plataforma");

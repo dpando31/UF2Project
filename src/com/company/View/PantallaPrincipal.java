@@ -1,11 +1,11 @@
 package com.company.View;
 
-import com.company.manager.ManagerJuegos;
+import com.company.manager.ManagerJuego;
 
 import java.util.Scanner;
 
 public class PantallaPrincipal {
-    public void mostrar(ManagerJuegos managerJuegos) {
+    public void mostrar(ManagerJuego managerJuego) {
         System.out.println("VideoGapp");
         System.out.println("a) Ultimos videojuegos añadidos");
         System.out.println("b) Mas valorados");
@@ -25,14 +25,14 @@ public class PantallaPrincipal {
 
         } else if ("c" .equals(opcion)){
             PantallaBuscar pantallaBuscar = new PantallaBuscar();
-            pantallaBuscar.mostrar(managerJuegos);
+            pantallaBuscar.mostrar(managerJuego);
 
         }  else if ("d" .equals(opcion)) {
             PantallaFavoritos pantallaFavoritos=new PantallaFavoritos();
             pantallaFavoritos.mostrar();
         }  else if ("e" .equals(opcion)) {
                 PantallaCrearJuego pantallaCrearJuego = new PantallaCrearJuego();
-                pantallaCrearJuego.mostrar(managerJuegos);
+                pantallaCrearJuego.mostrar(managerJuego);
 
         }
     }
