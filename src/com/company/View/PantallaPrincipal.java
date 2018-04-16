@@ -34,9 +34,9 @@ public class PantallaPrincipal {
         }  else if ("e" .equals(opcion)) {
                 PantallaCrearJuego pantallaCrearJuego = new PantallaCrearJuego();
                 pantallaCrearJuego.mostrar(managerJuego);
-        }  //else if ("f".equals(opcion)){
-//                PantallaMenuAcceso pantallaMenuAcceso = new PantallaMenuAcceso();
-//                pantallaMenuAcceso.mostrar();
-//        }
+        }  else if ("f".equals(opcion)){
+                PantallaMenuAcceso pantallaMenuAcceso = new PantallaMenuAcceso();
+                pantallaMenuAcceso.mostrar();
+        }
     }
 }
