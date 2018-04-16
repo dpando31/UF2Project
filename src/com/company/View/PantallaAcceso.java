@@ -20,7 +20,7 @@ public class PantallaAcceso {
 
         if(true == (valido)){
             PantallaPrincipal  pantallaPrincipal = new PantallaPrincipal();
-            pantallaPrincipal.mostrar(managerJuego);
+            pantallaPrincipal.mostrar(managerJuego , managerUsuarios);
 
         }
     }
