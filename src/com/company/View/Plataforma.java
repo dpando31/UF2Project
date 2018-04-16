@@ -2,7 +2,7 @@ package com.company.View;
 
 import java.util.Scanner;
 
-public class Plataforma {
+public class PantallaPlataforma {
 
     int   plataforma;
     private Scanner scanner;
