@@ -1,8 +1,6 @@
 package com.company.View;
 
 import com.company.manager.ManagerJuego;
-import com.company.model.Genero;
-import com.company.model.Plataforma;
 
 import java.util.Scanner;
 
@@ -25,8 +23,8 @@ public class PantallaBuscar {
 
 
         } else if ("c" .equals(opcion)){
-            Titulo titulo = new Titulo();
-
+            PantallaBuscarPorTitulo pantallaBuscarPorTitulo =new PantallaBuscarPorTitulo();
+            pantallaBuscarPorTitulo.mostrar(managerJuego);
         }
 
 
