@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class PantallaBuscar {
     public void mostrar(ManagerJuego managerJuego){
-        System.out.println("Como quieres bucar");
+        System.out.println("::Como quieres bucar::");
         System.out.println("a)Genero");
         System.out.println("b)Plataforma");
         System.out.println("c)Titulo");

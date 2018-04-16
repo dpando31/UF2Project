@@ -12,6 +12,7 @@ public class PantallaPrincipal {
         System.out.println("c) Buscar ");
         System.out.println("d) Mis favoritos");
         System.out.println("e) Añadir videojuego");
+        System.out.println("f) Salir");
         Scanner scanner = new Scanner(System.in);
 
         String opcion = scanner.nextLine();
@@ -33,7 +34,9 @@ public class PantallaPrincipal {
         }  else if ("e" .equals(opcion)) {
                 PantallaCrearJuego pantallaCrearJuego = new PantallaCrearJuego();
                 pantallaCrearJuego.mostrar(managerJuego);
-
+        }  else if ("f".equals(opcion)){
+                PantallaMenuAcceso pantallaMenuAcceso = new PantallaMenuAcceso();
+                pantallaMenuAcceso.mostrar();
         }
     }
 }
