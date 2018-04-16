@@ -6,8 +6,7 @@ public class Genero {
 
     int   genero;
     private Scanner scanner;
-
-    void  buscar (){
+    void  mostrar (){
         System.out.println("Buscar por el genero");
         System.out.println("1.Deporte");
         System.out.println("2.Aventura");
@@ -21,8 +20,6 @@ public class Genero {
         System.out.println("Elige un genero");
         genero =scanner.nextInt();
 
-    }
-    void igual(){
         if (genero == 1){
             System.out.println("Has elegido deporte");
 

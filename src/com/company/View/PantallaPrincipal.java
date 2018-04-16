@@ -42,7 +42,7 @@ public class PantallaPrincipal {
         } else if ("f".equals(opcion)) {
          PantallaMenuAcceso pantallaMenuAcceso =new PantallaMenuAcceso();
          PantallaMenuAcceso.mostrar(managerJuego,managerUsuarios);
-        } else if ("f".equals(opcion)) {
+        } else if ("g".equals(opcion)) {
 
         }
     }
