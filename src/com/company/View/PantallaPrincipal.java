@@ -23,7 +23,7 @@ public class PantallaPrincipal {
             String opcion = scanner.nextLine();
             if ("a".equals(opcion)) {
                 PantallaUltimos pantallaUltimos = new PantallaUltimos();
-                pantallaUltimos.mostrar(managerJuego,managerUsuarios);
+                pantallaUltimos.mostrar(managerJuego);
 
             } else if ("b".equals(opcion)) {
                 PantallaValorados pantallaValorados = new PantallaValorados();
