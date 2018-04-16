@@ -6,9 +6,8 @@ import java.util.Scanner;
 
 public class PantallaPlataforma {
 
-    int   plataforma;
-    private Scanner scanner;
-    public void  mostrar (ManagerJuego managerJuego){
+    public static void mostrar(ManagerJuego managerJuego) {
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Que plataforma estas buscando?");
         System.out.println("1.PC");
@@ -16,12 +15,12 @@ public class PantallaPlataforma {
         System.out.println("3.Microsoft");
         System.out.println("4.Nintendo");
         System.out.println("Elige una consola");
-        plataforma =scanner.nextInt();
+        String plataforma = scanner.nextLine();
 
-        if (plataforma == 1){
+        if ("1".equals(plataforma)){
             System.out.println("Has elegido PC");
         }
-        if (plataforma == 2){
+        if ("2".equals(plataforma)){
             System.out.println("Has elegido Playstation");
             System.out.println("En que consola estas buscando:");
             System.out.println("1.PS1");
@@ -32,14 +31,14 @@ public class PantallaPlataforma {
             System.out.println("6.PSVITA");
             int ps=scanner.nextInt();
         }
-        if (plataforma == 3){
+        if ("3".equals(plataforma)){
             System.out.println("Has elegido Microsoft");
             System.out.println("En que consola estas buscando:");
             System.out.println("1.Xbox");
             System.out.println("2.Xbox 360");
             System.out.println("3.Xbox ONE");
         }
-        if (plataforma == 4){
+        if ("4".equals(plataforma)){
             System.out.println("Has elegido Nintendo");
             System.out.println("En que consola estas buscando:");
             System.out.println("1.Wii");

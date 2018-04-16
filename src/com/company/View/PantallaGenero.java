@@ -6,9 +6,9 @@ import com.company.manager.ManagerJuego;
 import java.util.Scanner;
 public class PantallaGenero {
 
-    int   genero;
-    private Scanner scanner;
-    public void mostrar(){
+    public static void mostrar(ManagerJuego managerJuego) {
+        Scanner scanner = new Scanner(System.in);
+
         System.out.println("Buscar por el genero");
         System.out.println("1.Deporte");
         System.out.println("2.Aventura");
@@ -20,51 +20,43 @@ public class PantallaGenero {
         System.out.println("8.Simulacion");
         System.out.println("9.Arcade");
         System.out.println("Elige un genero");
-        genero =scanner.nextInt();
+        String genero = scanner.nextLine();
 
-        if (genero == 1){
+        if ("1".equals(genero )) {
             System.out.println("Has elegido deporte");
 
-
-        }
-
-        if (genero == 2){
+        } else if ("2".equals(genero )) {
             System.out.println("Has elegido aventura");
 
-        }
 
-        if (genero == 3){
+        } else if ("3".equals(genero )) {
             System.out.println("Has elegido accion");
-        }
 
-        if (genero == 4){
+
+        } else if ("4".equals(genero )) {
             System.out.println("Has elegido ciencia ficcion");
-        }
 
-        if (genero == 5){
+        } else if ("5".equals(genero )) {
             System.out.println("Has elegido carreras");
-        }
 
-        if (genero == 6){
+
+        } else if ("6".equals(genero )) {
             System.out.println("Has elegido Estrategia");
-        }
 
-        if (genero == 7){
+
+        } else if ("7".equals(genero )) {
             System.out.println("Has elegido Lucha");
 
-        }
 
-        if (genero == 8){
+        }  else if ("8".equals(genero )) {
             System.out.println("Has elegido ciencia Simulacion");
 
-        }
 
-        if (genero == 9) {
+        }else if ("9".equals(genero )) {
             System.out.println("Has elegido Arcade");
+
+
         }
-    }
 
-
-    public static void mostrar(ManagerJuego managerJuego) {
     }
 }
