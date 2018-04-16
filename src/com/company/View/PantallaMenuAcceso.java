@@ -23,6 +23,7 @@ public class PantallaMenuAcceso {
                 PantallaAcceso pantallaAcceso = new PantallaAcceso();
                 pantallaAcceso.mostrar(managerUsuarios,managerJuego);
                 break;
+
         }
     }
 }
