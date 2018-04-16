@@ -12,6 +12,7 @@ public class PantallaPrincipal {
         System.out.println("c) Buscar ");
         System.out.println("d) Mis favoritos");
         System.out.println("e) Añadir videojuego");
+        System.out.println("f) Salir");
         Scanner scanner = new Scanner(System.in);
 
         String opcion = scanner.nextLine();
