@@ -17,11 +17,11 @@ public class PantallaPrincipal {
         String opcion = scanner.nextLine();
         if ("a" .equals(opcion)){
             PantallaUltimos pantallaUltimos = new PantallaUltimos();
-            pantallaUltimos.mostrar();
+            pantallaUltimos.mostrar(managerJuego);
 
         } else if ("b" .equals(opcion)){
             PantallaValorados pantallaValorados = new PantallaValorados();
-            pantallaValorados.mostrar();
+            pantallaValorados.mostrar(managerJuego);
 
         } else if ("c" .equals(opcion)){
             PantallaBuscar pantallaBuscar = new PantallaBuscar();
@@ -29,7 +29,7 @@ public class PantallaPrincipal {
 
         }  else if ("d" .equals(opcion)) {
             PantallaFavoritos pantallaFavoritos=new PantallaFavoritos();
-            pantallaFavoritos.mostrar();
+            pantallaFavoritos.mostrar(managerJuego);
         }  else if ("e" .equals(opcion)) {
                 PantallaCrearJuego pantallaCrearJuego = new PantallaCrearJuego();
                 pantallaCrearJuego.mostrar(managerJuego);
