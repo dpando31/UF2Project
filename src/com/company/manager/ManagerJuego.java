@@ -24,8 +24,29 @@ public class ManagerJuego {
 
 
 
-    public Videojuego consultar(){
-        return videojuego;
+    public boolean consultar(String titulo) {
+        for (int i = 0; i < juego.length; i++) {
+            if(juego[i] != null && juego[i].equals(titulo)){
+                System.out.println("Este es el juego ");
+
+
+                return true;
+            }
+        }
+        return false;
+
     }
+
+    public boolean Crearjuego(String nombre){
+        for (int i = 0; i < juego.length; i++) {
+            if(juego[i] == null){
+                juego[i] = new Videojuego();
+                juego[i].nombre = nombre;
+                return true;
+            }
+        }
+        return false;
+    }
+
 }
 

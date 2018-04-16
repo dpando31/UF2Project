@@ -15,12 +15,12 @@ public class PantallaBuscar {
         String opcion = scanner.nextLine();
 
         if ("a" .equals(opcion)){
-            Genero genero =new Genero();
-
+        PantallaGenero pantallaGenero =new PantallaGenero();
+        PantallaGenero.mostrar(managerJuego);
 
         } else if ("b" .equals(opcion)){
-            Plataforma plataforma =new Plataforma();
-
+            PantallaPlataforma pantallaPlataforma =new PantallaPlataforma();
+            pantallaPlataforma.mostrar(managerJuego);
 
         } else if ("c" .equals(opcion)){
             PantallaBuscarPorTitulo pantallaBuscarPorTitulo =new PantallaBuscarPorTitulo();

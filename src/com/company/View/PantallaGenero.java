@@ -1,12 +1,14 @@
 package com.company.View;
 
 
+import com.company.manager.ManagerJuego;
+
 import java.util.Scanner;
-public class Genero {
+public class PantallaGenero {
 
     int   genero;
     private Scanner scanner;
-    void  mostrar (){
+    public void mostrar(){
         System.out.println("Buscar por el genero");
         System.out.println("1.Deporte");
         System.out.println("2.Aventura");
@@ -60,5 +62,9 @@ public class Genero {
         if (genero == 9) {
             System.out.println("Has elegido Arcade");
         }
+    }
+
+
+    public static void mostrar(ManagerJuego managerJuego) {
     }
 }

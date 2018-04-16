@@ -1,12 +1,14 @@
 package com.company.View;
 
+import com.company.manager.ManagerJuego;
+
 import java.util.Scanner;
 
 public class PantallaPlataforma {
 
     int   plataforma;
     private Scanner scanner;
-    void  buscar (){
+    public void  mostrar (ManagerJuego managerJuego){
 
         System.out.println("Que plataforma estas buscando?");
         System.out.println("1.PC");
@@ -15,9 +17,7 @@ public class PantallaPlataforma {
         System.out.println("4.Nintendo");
         System.out.println("Elige una consola");
         plataforma =scanner.nextInt();
-    }
 
-    void igual(){
         if (plataforma == 1){
             System.out.println("Has elegido PC");
         }
@@ -50,6 +50,7 @@ public class PantallaPlataforma {
             int n=scanner.nextInt();
         }
     }
+
 
 
 }

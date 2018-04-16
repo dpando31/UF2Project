@@ -13,11 +13,13 @@ public class PantallaBuscarPorTitulo {
 
         System.out.println("Pon un titulo");
         String titulo = scanner.nextLine();
+        managerJuego.consultar(titulo);
 
+        boolean valido = managerJuego.consultar(titulo);
 
-
-
-
+        if(false == (valido)){
+            System.out.println("No esta el juego");
+        }
 
     }
 }
