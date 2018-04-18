@@ -4,23 +4,23 @@ package com.company.manager;
 import com.company.model.Videojuego;
 
 public class ManagerJuego {
-    Videojuego videojuego;
-    Videojuego[] juego = new Videojuego[50];
+//    public Videojuego videojuego;
+    public Videojuego[] juego = new Videojuego[15];
 
-    final int FIFA = 0;
-    final int PUBG = 1;
-    final int Call_of_Duty = 2;
-    final int Assetto_Corsa= 3;
-    final int Dirt3 = 4;
-    final int Dirt_Rally = 5;
-    final int CSGO = 6;
-    final int GtaV = 7;
-    final int Far_Cry_5= 8;
-    final int Fortnite = 9;
-    final int Overwatch = 10;
-    final int Assasssins_Creed_Origins = 11;
-    final int Minecraft = 12;
-    final int A_Way_Out = 13;
+    public int FIFA = 0;
+    public int PUBG = 1;
+    int Call_of_Duty = 2;
+    int Assetto_Corsa= 3;
+    int Dirt3 = 4;
+    int Dirt_Rally = 5;
+    int CSGO = 6;
+    int GtaV = 7;
+    int Far_Cry_5= 8;
+    int Fortnite = 9;
+    int Overwatch = 10;
+    int Assasssins_Creed_Origins = 11;
+    int Minecraft = 12;
+    int A_Way_Out = 13;
 
 
 
