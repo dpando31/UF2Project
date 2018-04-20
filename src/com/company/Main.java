@@ -11,8 +11,10 @@ public class Main {
 
     public static void main(String[] args) {
         ManagerJuego managerJuego = new ManagerJuego();
+        managerJuego.crearJuegosIniciales();
+
         ManagerUsuarios managerUsuarios = new ManagerUsuarios();
-        PantallaPrincipal pantallaPrincipal =new PantallaPrincipal();
+        PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
 
         PantallaMenuAcceso pantallaMenuAcceso = new PantallaMenuAcceso();
         pantallaMenuAcceso.mostrar(managerJuego,managerUsuarios,pantallaPrincipal);

@@ -20,7 +20,7 @@ public class PantallaUltimos {
         System.out.println("9) God of War");
         System.out.println("10) Sea of Thieves");
 
-        for  (int i = 0; i< managerJuego.juego.length; i++) {
+        for  (int i = 10; i< managerJuego.juego.length; i++) {
             System.out.println(managerJuego.juego[i]);
         }
     }

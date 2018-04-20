@@ -6,7 +6,8 @@ import com.company.manager.ManagerUsuarios;
 import java.util.Scanner;
 
 public class PantallaMenuAcceso {
-    public static void mostrar(ManagerJuego managerJuego, ManagerUsuarios managerUsuarios,PantallaPrincipal pantallaPrincipal){
+
+    public void mostrar(ManagerJuego managerJuego, ManagerUsuarios managerUsuarios,PantallaPrincipal pantallaPrincipal){
         System.out.println("MENU ACCESO");
         System.out.println("a) Registrarse");
         System.out.println("b) Acceder");

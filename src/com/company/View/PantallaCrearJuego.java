@@ -22,9 +22,9 @@ public class PantallaCrearJuego {
 
 
 
-        managerJuego.Crearjuego(nombre);
+        managerJuego.crearJuego(nombre);
 
-        boolean valido = managerJuego.Crearjuego(nombre);
+        boolean valido = managerJuego.crearJuego(nombre);
 
         if(true == (valido)){
             System.out.println("Ya se ha añadido el juego");
