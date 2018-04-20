@@ -54,10 +54,10 @@ public class ManagerJuego {
                 juego[i].genero = genero;
                 juego[i].plataforma = plataforma;
                 juego[i].desarrollador = desarrollador;
-                juego[i].plataforma = editor;
-                juego[i].plataforma = motorGrafico;
-                juego[i].plataforma = pegi;
-                juego[i].plataforma = precio;
+                juego[i].editor = editor;
+                juego[i].motorGrafico = motorGrafico;
+                juego[i].pegi = pegi;
+                juego[i].precio = precio;
                 return true;
             }
         }
