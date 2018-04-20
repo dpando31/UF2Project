@@ -27,7 +27,6 @@ public class ManagerJuego {
     public boolean consultar(String titulo) {
         for (int i = 0; i < juego.length; i++) {
             if(juego[i] != null && juego[i].equals(titulo)){
-                System.out.println("Este es el juego ");
 
 
                 return true;

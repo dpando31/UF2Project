@@ -1,11 +1,13 @@
 package com.company.View;
 
 import com.company.manager.ManagerJuego;
+import com.company.manager.ManagerUsuarios;
 
 import java.util.Scanner;
 
 public class PantallaUltimos {
-    public void mostrar(ManagerJuego managerJuego) {
+    public void mostrar(ManagerJuego managerJuego, ManagerUsuarios managerUsuarios,PantallaPrincipal pantallaPrincipal) {
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Eston son los ultimos juegos");
         System.out.println("1) Far Cry 5");
         System.out.println("2) Fortnite");
@@ -17,6 +19,16 @@ public class PantallaUltimos {
         System.out.println("8) Los Pilares de la Tierra");
         System.out.println("9) God of War");
         System.out.println("10) Sea of Thieves");
+        System.out.println("11)Volver pantalla principal");
+        String volver = scanner.nextLine();
+
+        if ("11".equals(volver)) {
+            pantallaPrincipal.mostrar(managerJuego,managerUsuarios,pantallaPrincipal);
+
+        }
+
+
+
     }
 
 

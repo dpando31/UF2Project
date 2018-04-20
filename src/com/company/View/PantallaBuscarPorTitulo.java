@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class PantallaBuscarPorTitulo {
 
-    void mostrar(ManagerJuego managerJuego) {
+    public void mostrar(ManagerJuego managerJuego) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Pon un titulo");
