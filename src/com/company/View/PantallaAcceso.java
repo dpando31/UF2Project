@@ -6,7 +6,7 @@ import com.company.manager.ManagerUsuarios;
 import java.util.Scanner;
 
 public class PantallaAcceso {
-    void mostrar( ManagerUsuarios managerUsuarios ,ManagerJuego managerJuego,PantallaPrincipal pantallaPrincipal){
+    void mostrar( ManagerUsuarios managerUsuarios ,ManagerJuego managerJuego){
         System.out.println("ACCEDER");
         System.out.println("Usuario:");
         Scanner scanner = new Scanner(System.in);
@@ -19,7 +19,8 @@ public class PantallaAcceso {
         boolean valido = managerUsuarios.comprobarUsuario(usuario, password);
 
         if(true == (valido)){
-            pantallaPrincipal.mostrar(managerJuego , managerUsuarios,pantallaPrincipal);
+            PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
+            pantallaPrincipal.mostrar(managerJuego , managerUsuarios);
 
         }
     }

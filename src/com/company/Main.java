@@ -14,10 +14,10 @@ public class Main {
         managerJuego.crearJuegosIniciales();
 
         ManagerUsuarios managerUsuarios = new ManagerUsuarios();
-        PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
+        managerUsuarios.crearUsuario("pepe", "pepe");
 
         PantallaMenuAcceso pantallaMenuAcceso = new PantallaMenuAcceso();
-        pantallaMenuAcceso.mostrar(managerJuego,managerUsuarios,pantallaPrincipal);
+        pantallaMenuAcceso.mostrar(managerJuego,managerUsuarios);
 
     }
 }

@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class PantallaPlataforma {
 
-    public static void mostrar(ManagerJuego managerJuego) {
+    public void mostrar(ManagerJuego managerJuego) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Que plataforma estas buscando?");

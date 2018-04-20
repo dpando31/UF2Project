@@ -32,7 +32,6 @@ public class ManagerJuego {
             }
         }
         return false;
-
     }
 
     public boolean crearJuego(String nombre){

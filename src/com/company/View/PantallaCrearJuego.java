@@ -1,11 +1,12 @@
 package com.company.View;
 
 import com.company.manager.ManagerJuego;
+import com.company.manager.ManagerUsuarios;
 
 import java.util.Scanner;
 
 public class PantallaCrearJuego {
-    public void mostrar(ManagerJuego managerJuego,PantallaPrincipal pantallaPrincipa){
+    public void mostrar(ManagerJuego managerJuego, ManagerUsuarios managerUsuarios){
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Pon el nombre del juego que quieras añadir");
@@ -18,10 +19,6 @@ public class PantallaCrearJuego {
         String plataforma = scanner.nextLine();
 
 
-
-
-
-
         managerJuego.crearJuego(nombre);
 
         boolean valido = managerJuego.crearJuego(nombre);
@@ -31,8 +28,5 @@ public class PantallaCrearJuego {
         }else {
             System.out.println("Ya esta");
         }
-
-
-
     }
 }

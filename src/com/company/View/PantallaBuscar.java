@@ -6,7 +6,8 @@ import com.company.manager.ManagerUsuarios;
 import java.util.Scanner;
 
 public class PantallaBuscar {
-    public void mostrar(ManagerJuego managerJuego, PantallaPrincipal pantallaPrincipal, ManagerUsuarios managerUsuarios){
+
+    public void mostrar(ManagerJuego managerJuego, ManagerUsuarios managerUsuarios){
         System.out.println("::Como quieres bucar::");
         System.out.println("a)Genero");
         System.out.println("b)Plataforma");
@@ -25,10 +26,11 @@ public class PantallaBuscar {
             pantallaPlataforma.mostrar(managerJuego);
 
         } else if ("c" .equals(opcion)){
-            PantallaBuscarPorTitulo pantallaBuscarPorTitulo =new PantallaBuscarPorTitulo();
+            PantallaBuscarPorTitulo pantallaBuscarPorTitulo = new PantallaBuscarPorTitulo();
             pantallaBuscarPorTitulo.mostrar(managerJuego);
         }else if ("d".equals(opcion)) {
-            pantallaPrincipal.mostrar(managerJuego,managerUsuarios,pantallaPrincipal);
+            PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
+            pantallaPrincipal.mostrar(managerJuego, managerUsuarios);
         }
 
 
