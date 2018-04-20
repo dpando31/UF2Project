@@ -21,13 +21,23 @@ public class ManagerJuego {
     final int Assasssins_Creed_Origins = 11;
     final int Minecraft = 12;
     final int A_Way_Out = 13;
+    final int Batman_The_Enemy_Within = 14;
+    final int DKC_Tropical_Freeze = 15;
+    final int Hellblade_Senua_Sacrifice = 16;
+    final int Infernium = 17;
+    final int Sea_of_Thieves = 18;
+    final int Los_Pilares_de_la_Tierra = 19;
+    final int God_of_War = 20;
+    final int Monster_Hunter_World = 21;
+
 
 
 
     public boolean consultar(String titulo) {
         for (int i = 0; i < juego.length; i++) {
             if(juego[i] != null && juego[i].equals(titulo)){
-                System.out.println("Este es el juego ");
+                System.out.println("Este es el juego"
+                );
 
 
                 return true;
