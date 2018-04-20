@@ -4,51 +4,66 @@ package com.company.manager;
 import com.company.model.Videojuego;
 
 public class ManagerJuego {
-//    public Videojuego videojuego;
-    public Videojuego[] juego = new Videojuego[50];
+    Videojuego videojuego;
+    Videojuego[] juego = new Videojuego[50];
 
-//     PUBG = 1;
-//     Call_of_Duty = 2;
-//     Assetto_Corsa= 3;
-//     Dirt3 = 4;
-//     Dirt_Rally = 5;
-//     CSGO = 6;
-//     GtaV = 7;
-//     Far_Cry_5= 8;
-//     Fortnite = 9;
-//     Overwatch = 10;
-//     Assasssins_Creed_Origins = 11;
-//     Minecraft = 12;
-//     A_Way_Out = 13;
+    int FIFA = 0;
+    int PUBG = 1;
+    int Call_of_Duty = 2;
+    int Assetto_Corsa= 3;
+    int Dirt3 = 4;
+    int Dirt_Rally = 5;
+    int CSGO = 6;
+    int GtaV = 7;
+    int Far_Cry_5= 8;
+    int Fortnite = 9;
+    int Overwatch = 10;
+    int Assasssins_Creed_Origins = 11;
+    int Minecraft = 12;
+    int A_Way_Out = 13;
+    int Batman_The_Enemy_Within = 14;
+    int DKC_Tropical_Freeze = 15;
+    int Hellblade_Senua_Sacrifice = 16;
+    int Infernium = 17;
+    int Sea_of_Thieves = 18;
+    int Los_Pilares_de_la_Tierra = 19;
+    int God_of_War = 20;
+    int Monster_Hunter_World = 21;
 
 
 
     public boolean consultar(String titulo) {
         for (int i = 0; i < juego.length; i++) {
             if(juego[i] != null && juego[i].equals(titulo)){
+                System.out.println("Este es el juego"
+                );
 
 
                 return true;
             }
         }
         return false;
+
     }
 
-    public boolean crearJuego(String nombre){
+    public boolean Crearjuego(String nombre,String fechaLanzamiento,String genero,String plataforma,String desarrollador,String editor,String motorGrafico,String pegi,String precio){
         for (int i = 0; i < juego.length; i++) {
             if(juego[i] == null){
                 juego[i] = new Videojuego();
                 juego[i].nombre = nombre;
+                juego[i].fechaLanzamiento = fechaLanzamiento;
+                juego[i].genero = genero;
+                juego[i].plataforma = plataforma;
+                juego[i].desarrollador = desarrollador;
+                juego[i].plataforma = editor;
+                juego[i].plataforma = motorGrafico;
+                juego[i].plataforma = pegi;
+                juego[i].plataforma = precio;
                 return true;
             }
         }
         return false;
     }
 
-    public void crearJuegosIniciales(){
-        crearJuego("FIFA");
-        crearJuego("CALL OF DUTY");
-        crearJuego("ASSETTO CORSA");
-    }
 }
 

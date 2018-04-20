@@ -1,11 +1,14 @@
 package com.company.model;
 
 public class Videojuego {
-    public int edad;
-    public String fabricante;
-    public String fechaPublicacion;
     public String nombre;
+    public String fechaLanzamiento;
+    public String genero;
     public String plataforma;
-    public int precio;
+    public String desarrollador;
+    public String editor;
+    public String motorGrafico;
+    public String pegi;
+    public String precio;
 }
 

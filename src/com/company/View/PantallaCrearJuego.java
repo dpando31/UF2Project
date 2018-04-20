@@ -9,19 +9,37 @@ public class PantallaCrearJuego {
     public void mostrar(ManagerJuego managerJuego, ManagerUsuarios managerUsuarios){
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Pon el nombre del juego que quieras añadir");
+        System.out.println("Introducir el nombre del videojuego");
         String nombre = scanner.nextLine();
 
-        System.out.println("Genero del juego");
+        System.out.println("Introducir la fecha de lanzamiento del videojuego");
+        String fechaLanzamiento = scanner.nextLine();
+
+        System.out.println("Introducir el genero del videojuego");
         String genero = scanner.nextLine();
 
-        System.out.println("Pon la plataforma del juego");
+        System.out.println("Introducir la plataforma del videojuego");
         String plataforma = scanner.nextLine();
 
+        System.out.println("Introducir el desarrollador del videojuego");
+        String desarrollador = scanner.nextLine();
 
-        managerJuego.crearJuego(nombre);
+        System.out.println("Introducir el editor del videojuego");
+        String editor = scanner.nextLine();
 
-        boolean valido = managerJuego.crearJuego(nombre);
+        System.out.println("Introducir el motorGrafico del videojuego");
+        String motorGrafico = scanner.nextLine();
+
+        System.out.println("Introducir el pegi del videojuego");
+        String pegi = scanner.nextLine();
+
+        System.out.println("Introducir el precio del videojuego");
+        String precio = scanner.nextLine();
+
+
+        managerJuego.Crearjuego(nombre,fechaLanzamiento,genero,plataforma,desarrollador,editor,motorGrafico,pegi,precio);
+
+        boolean valido = managerJuego.Crearjuego(nombre,fechaLanzamiento,genero,plataforma,desarrollador,editor,motorGrafico,pegi,precio);
 
         if(true == (valido)){
             System.out.println("Ya se ha añadido el juego");
