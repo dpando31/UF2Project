@@ -4,48 +4,32 @@ package com.company.manager;
 import com.company.model.Videojuego;
 
 public class ManagerJuego {
-    Videojuego videojuego;
-    Videojuego[] juego = new Videojuego[50];
+//    public Videojuego videojuego;
+    public Videojuego[] juego = new Videojuego[50];
 
-    int FIFA = 0;
-    int PUBG = 1;
-    int Call_of_Duty = 2;
-    int Assetto_Corsa= 3;
-    int Dirt3 = 4;
-    int Dirt_Rally = 5;
-    int CSGO = 6;
-    int GtaV = 7;
-    int Far_Cry_5= 8;
-    int Fortnite = 9;
-    int Overwatch = 10;
-    int Assasssins_Creed_Origins = 11;
-    int Minecraft = 12;
-    int A_Way_Out = 13;
-    int Batman_The_Enemy_Within = 14;
-    int DKC_Tropical_Freeze = 15;
-    int Hellblade_Senua_Sacrifice = 16;
-    int Infernium = 17;
-    int Sea_of_Thieves = 18;
-    int Los_Pilares_de_la_Tierra = 19;
-    int God_of_War = 20;
-    int Monster_Hunter_World = 21;
 
 
 
     public boolean consultar(String titulo) {
         for (int i = 0; i < juego.length; i++) {
-            if(juego[i] != null && juego[i].equals(titulo)){
-                System.out.println("Este es el juego");
-
+            if(juego[i] != null && juego[i].nombre.equals(titulo)){
+                System.out.println(juego[i].nombre);
+                System.out.println(juego[i].fechaLanzamiento);
+                System.out.println(juego[i].genero);
+                System.out.println(juego[i].plataforma);
+                System.out.println(juego[i].desarrollador);
+                System.out.println(juego[i].editor);
+                System.out.println(juego[i].motorGrafico);
+                System.out.println(juego[i].pegi);
+                System.out.println(juego[i].precio);
 
                 return true;
             }
         }
         return false;
-
     }
 
-    public boolean Crearjuego(String nombre,String fechaLanzamiento,String genero,String plataforma,String desarrollador,String editor,String motorGrafico,String pegi,String precio){
+    public boolean crearJuego(String nombre,String fechaLanzamiento,String genero,String plataforma,String desarrollador,String editor,String motorGrafico,String pegi,String precio){
         for (int i = 0; i < juego.length; i++) {
             if(juego[i] == null){
                 juego[i] = new Videojuego();
@@ -54,15 +38,31 @@ public class ManagerJuego {
                 juego[i].genero = genero;
                 juego[i].plataforma = plataforma;
                 juego[i].desarrollador = desarrollador;
-                juego[i].plataforma = editor;
-                juego[i].plataforma = motorGrafico;
-                juego[i].plataforma = pegi;
-                juego[i].plataforma = precio;
+                juego[i].editor = editor;
+                juego[i].motorGrafico = motorGrafico;
+                juego[i].pegi = pegi;
+                juego[i].precio = precio;
                 return true;
             }
         }
         return false;
     }
 
+    public void crearJuegosIniciales(){
+        crearJuego("FIFA" );
+        crearJuego("CALL OF DUTY");
+        crearJuego("PUBG");
+        crearJuego("Dirt3");
+        crearJuego("Dirt_Rally");
+        crearJuego("CSGO");
+        crearJuego("GtaV");
+        crearJuego("Far Cry 5");
+        crearJuego("Fortnite");
+        crearJuego("Overwatch");
+        crearJuego("Assasssins Creed Origins");
+        crearJuego("Minecraft");
+        crearJuego("A Way Out");
+
+    }
 }
 

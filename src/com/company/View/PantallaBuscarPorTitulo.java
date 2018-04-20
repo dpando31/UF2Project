@@ -20,7 +20,8 @@ public class PantallaBuscarPorTitulo {
         if(false == (valido)){
             System.out.println("No esta el juego");
         }else{
-            System.out.println("esta");
+            System.out.println("ya esta ");
+
         }
 
     }

@@ -37,9 +37,9 @@ public class PantallaCrearJuego {
         String precio = scanner.nextLine();
 
 
-        managerJuego.Crearjuego(nombre,fechaLanzamiento,genero,plataforma,desarrollador,editor,motorGrafico,pegi,precio);
+        managerJuego.crearJuego(nombre,fechaLanzamiento,genero,plataforma,desarrollador,editor,motorGrafico,pegi,precio);
 
-        boolean valido = managerJuego.Crearjuego(nombre,fechaLanzamiento,genero,plataforma,desarrollador,editor,motorGrafico,pegi,precio);
+        boolean valido = managerJuego.crearJuego(nombre,fechaLanzamiento,genero,plataforma,desarrollador,editor,motorGrafico,pegi,precio);
 
         if(true == (valido)){
             System.out.println("Ya se ha añadido el juego");
