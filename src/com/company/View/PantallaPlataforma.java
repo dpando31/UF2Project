@@ -1,12 +1,13 @@
 package com.company.View;
 
 import com.company.manager.ManagerJuego;
+import com.company.manager.ManagerUsuarios;
 
 import java.util.Scanner;
 
 public class PantallaPlataforma {
 
-    public void mostrar(ManagerJuego managerJuego) {
+    public void mostrar(ManagerJuego managerJuego, ManagerUsuarios managerUsuarios) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Que plataforma estas buscando?");

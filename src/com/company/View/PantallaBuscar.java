@@ -19,15 +19,15 @@ public class PantallaBuscar {
 
         if ("a" .equals(opcion)){
         PantallaGenero pantallaGenero =new PantallaGenero();
-        PantallaGenero.mostrar(managerJuego);
+        PantallaGenero.mostrar(managerJuego,managerUsuarios);
 
         } else if ("b" .equals(opcion)){
             PantallaPlataforma pantallaPlataforma =new PantallaPlataforma();
-            pantallaPlataforma.mostrar(managerJuego);
+            pantallaPlataforma.mostrar(managerJuego,managerUsuarios);
 
         } else if ("c" .equals(opcion)){
             PantallaBuscarPorTitulo pantallaBuscarPorTitulo = new PantallaBuscarPorTitulo();
-            pantallaBuscarPorTitulo.mostrar(managerJuego);
+            pantallaBuscarPorTitulo.mostrar(managerJuego,managerUsuarios);
         }else if ("d".equals(opcion)) {
             PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
             pantallaPrincipal.mostrar(managerJuego, managerUsuarios);

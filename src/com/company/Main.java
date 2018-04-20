@@ -14,7 +14,7 @@ public class Main {
         managerJuego.crearJuegosIniciales();
 
         ManagerUsuarios managerUsuarios = new ManagerUsuarios();
-        managerUsuarios.crearUsuario("pepe", "pepe");
+        managerUsuarios.crearUsuario("a", "a");
 
         PantallaMenuAcceso pantallaMenuAcceso = new PantallaMenuAcceso();
         pantallaMenuAcceso.mostrar(managerJuego,managerUsuarios);
