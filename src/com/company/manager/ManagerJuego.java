@@ -48,7 +48,28 @@ public class ManagerJuego {
     public void crearJuegosIniciales(){
         crearJuego("FIFA");
         crearJuego("CALL OF DUTY");
-        crearJuego("ASSETTO CORSA");
+        crearJuego("PUBG");
+        crearJuego("Dirt3");
+        crearJuego("Dirt_Rally");
+        crearJuego("CSGO");
+        crearJuego("GtaV");
+        crearJuego("Far Cry 5");
+        crearJuego("Fortnite");
+        crearJuego("Overwatch");
+        crearJuego("Assasssins Creed Origins");
+        crearJuego("Minecraft");
+        crearJuego("A Way Out");
+
+
+
+
+
+
+
+
+
+
+
     }
 }
 
