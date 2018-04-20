@@ -5,10 +5,10 @@ import com.company.model.Videojuego;
 
 public class ManagerJuego {
 //    public Videojuego videojuego;
-    public Videojuego[] juego = new Videojuego[15];
+    public Videojuego[] juego = new Videojuego[50];
 
-    public int FIFA = 0;
-    public int PUBG = 1;
+    int FIFA = 0;
+    int PUBG = 1;
     int Call_of_Duty = 2;
     int Assetto_Corsa= 3;
     int Dirt3 = 4;
