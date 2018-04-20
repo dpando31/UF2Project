@@ -1,15 +1,17 @@
 package com.company.View;
 
 import com.company.manager.ManagerJuego;
+import com.company.manager.ManagerUsuarios;
 
 import java.util.Scanner;
 
 public class PantallaBuscar {
-    public void mostrar(ManagerJuego managerJuego){
+    public void mostrar(ManagerJuego managerJuego, PantallaPrincipal pantallaPrincipal, ManagerUsuarios managerUsuarios){
         System.out.println("::Como quieres bucar::");
         System.out.println("a)Genero");
         System.out.println("b)Plataforma");
         System.out.println("c)Titulo");
+        System.out.println("d)Volver pantalla principal");
         Scanner scanner = new Scanner(System.in);
 
         String opcion = scanner.nextLine();
@@ -25,6 +27,8 @@ public class PantallaBuscar {
         } else if ("c" .equals(opcion)){
             PantallaBuscarPorTitulo pantallaBuscarPorTitulo =new PantallaBuscarPorTitulo();
             pantallaBuscarPorTitulo.mostrar(managerJuego);
+        }else if ("d".equals(opcion)) {
+            pantallaPrincipal.mostrar(managerJuego,managerUsuarios,pantallaPrincipal);
         }
 
 

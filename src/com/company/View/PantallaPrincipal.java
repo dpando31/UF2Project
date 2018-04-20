@@ -6,7 +6,7 @@ import com.company.manager.ManagerUsuarios;
 import java.util.Scanner;
 
 public class PantallaPrincipal {
-    public void mostrar(ManagerJuego managerJuego , ManagerUsuarios managerUsuarios ) {
+    public void mostrar(ManagerJuego managerJuego , ManagerUsuarios managerUsuarios,PantallaPrincipal pantallaPrincipal ) {
         while(true) {
             System.out.println("VideoGapp");
             System.out.println("a) Ultimos videojuegos añadidos");
@@ -23,27 +23,27 @@ public class PantallaPrincipal {
             String opcion = scanner.nextLine();
             if ("a".equals(opcion)) {
                 PantallaUltimos pantallaUltimos = new PantallaUltimos();
-                pantallaUltimos.mostrar(managerJuego);
+                pantallaUltimos.mostrar(managerJuego,managerUsuarios,pantallaPrincipal);
 
             } else if ("b".equals(opcion)) {
                 PantallaValorados pantallaValorados = new PantallaValorados();
-                pantallaValorados.mostrar(managerJuego);
+                pantallaValorados.mostrar(managerJuego,managerUsuarios,pantallaPrincipal);
 
             } else if ("c".equals(opcion)) {
                 PantallaBuscar pantallaBuscar = new PantallaBuscar();
-                pantallaBuscar.mostrar(managerJuego);
+                pantallaBuscar.mostrar(managerJuego,pantallaPrincipal,managerUsuarios);
 
             } else if ("d".equals(opcion)) {
                 PantallaFavoritos pantallaFavoritos = new PantallaFavoritos();
-                pantallaFavoritos.mostrar(managerJuego);
+                pantallaFavoritos.mostrar(managerJuego,pantallaPrincipal);
 
             } else if ("e".equals(opcion)) {
                 PantallaCrearJuego pantallaCrearJuego = new PantallaCrearJuego();
-                pantallaCrearJuego.mostrar(managerJuego);
+                pantallaCrearJuego.mostrar(managerJuego,pantallaPrincipal);
 
             } else if ("f".equals(opcion)) {
                 PantallaMenuAcceso pantallaMenuAcceso = new PantallaMenuAcceso();
-                PantallaMenuAcceso.mostrar(managerJuego, managerUsuarios);
+                PantallaMenuAcceso.mostrar(managerJuego, managerUsuarios,pantallaPrincipal);
 
             } else if ("g".equals(opcion)) {
                 return;
