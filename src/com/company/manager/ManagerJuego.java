@@ -7,28 +7,30 @@ public class ManagerJuego {
     Videojuego videojuego;
     Videojuego[] juego = new Videojuego[50];
 
-    final int FIFA = 0;
-    final int PUBG = 1;
-    final int Call_of_Duty = 2;
-    final int Assetto_Corsa= 3;
-    final int Dirt3 = 4;
-    final int Dirt_Rally = 5;
-    final int CSGO = 6;
-    final int GtaV = 7;
-    final int Far_Cry_5= 8;
-    final int Fortnite = 9;
-    final int Overwatch = 10;
-    final int Assasssins_Creed_Origins = 11;
-    final int Minecraft = 12;
-    final int A_Way_Out = 13;
-    final int Batman_The_Enemy_Within = 14;
-    final int DKC_Tropical_Freeze = 15;
-    final int Hellblade_Senua_Sacrifice = 16;
-    final int Infernium = 17;
-    final int Sea_of_Thieves = 18;
-    final int Los_Pilares_de_la_Tierra = 19;
-    final int God_of_War = 20;
-    final int Monster_Hunter_World = 21;
+    int FIFA = 0;
+    int PUBG = 1;
+    int Call_of_Duty = 2;
+    int Assetto_Corsa= 3;
+    int Dirt3 = 4;
+    int Dirt_Rally = 5;
+    int CSGO = 6;
+    int GtaV = 7;
+    int Far_Cry_5= 8;
+    int Fortnite = 9;
+    int Overwatch = 10;
+    int Assasssins_Creed_Origins = 11;
+    int Minecraft = 12;
+    int A_Way_Out = 13;
+    int Batman_The_Enemy_Within = 14;
+    int DKC_Tropical_Freeze = 15;
+    int Hellblade_Senua_Sacrifice = 16;
+    int Infernium = 17;
+    int Sea_of_Thieves = 18;
+    int Los_Pilares_de_la_Tierra = 19;
+    int God_of_War = 20;
+    int Monster_Hunter_World = 21;
+
+
 
 
 
