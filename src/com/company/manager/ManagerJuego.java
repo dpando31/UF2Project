@@ -49,7 +49,7 @@ public class ManagerJuego {
     }
 
     public void crearJuegosIniciales(){
-        crearJuego("FIFA" );
+        crearJuego("FIFA","29-09-2017","Deportes"," PS3, PS4, PC, XBOX360, Nintendo Swich","EA Sports","Electronic Arts", "Frosbite","+7","60€" );
         crearJuego("CALL OF DUTY");
         crearJuego("PUBG");
         crearJuego("Dirt3");
