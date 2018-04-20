@@ -1,12 +1,13 @@
 package com.company.View;
 
 import com.company.manager.ManagerJuego;
+import com.company.manager.ManagerUsuarios;
 import com.company.model.Videojuego;
 
 import java.util.Scanner;
 
 public class PantallaUltimos {
-    public void mostrar(ManagerJuego managerJuego) {
+    public void mostrar(ManagerJuego managerJuego, ManagerUsuarios managerUsuarios, PantallaPrincipal pantallaPrincipal) {
         System.out.println("Eston son los ultimos juegos");
         System.out.println("1) Far Cry 5");
         System.out.println("2) Fortnite");
