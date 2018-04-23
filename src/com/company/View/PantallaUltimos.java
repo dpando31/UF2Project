@@ -11,7 +11,7 @@ public class PantallaUltimos {
         System.out.println("Eston son los ultimos juegos");
 
 
-        for  (int i = 0; i< managerJuego.juego.length; i++) {
+        for  (int i = 0; i<3 && i<managerJuego.juego.length; i++) {
             if(managerJuego.juego[i] != null) {
                 System.out.println("-----------------------------------------------------------------------");
                 System.out.println("                  FICHA DEl Juego                                      ");
