@@ -35,7 +35,7 @@ public class ManagerJuego {
 
     public boolean consultarGenero(String genero) {
         for (int i = 0; i < juego.length; i++) {
-            if(juego[i] != null && juego[i].genero.equals(genero)){
+            if(juego[i] != null && juego[i].nombre.equals(genero)){
                 System.out.println(juego[i].nombre);
             }
         }
