@@ -18,10 +18,12 @@ public class PantallaPlataforma {
         System.out.println("Elige una consola");
         String plataforma = scanner.nextLine();
 
-        if ("1".equals(plataforma)){
+        if ("PC".equals(plataforma)){
             System.out.println("Has elegido PC");
+            managerJuego.consultarPlataforma(plataforma);
+
         }
-        if ("2".equals(plataforma)){
+        if ("Playstation".equals(plataforma)){
             System.out.println("Has elegido Playstation");
             System.out.println("En que consola estas buscando:");
             System.out.println("1.PS1");
@@ -32,14 +34,14 @@ public class PantallaPlataforma {
             System.out.println("6.PSVITA");
             int ps=scanner.nextInt();
         }
-        if ("3".equals(plataforma)){
+        if ("Microsoft".equals(plataforma)){
             System.out.println("Has elegido Microsoft");
             System.out.println("En que consola estas buscando:");
             System.out.println("1.Xbox");
             System.out.println("2.Xbox 360");
             System.out.println("3.Xbox ONE");
         }
-        if ("4".equals(plataforma)){
+        if ("Nintendo".equals(plataforma)){
             System.out.println("Has elegido Nintendo");
             System.out.println("En que consola estas buscando:");
             System.out.println("1.Wii");
