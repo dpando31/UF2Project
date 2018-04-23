@@ -10,7 +10,7 @@ public class PantallaPrincipal {
         while(true) {
             System.out.println("VideoGapp");
             System.out.println("a) Ultimos videojuegos añadidos");
-            System.out.println("b) Mas valorados");
+            System.out.println("b) Valorar juego");
             System.out.println("c) Buscar ");
             System.out.println("d) Mis favoritos");
             System.out.println("e) Añadir videojuego");

@@ -53,15 +53,15 @@ public class ManagerJuego {
         crearJuego("CALL OF DUTY", "29-08-2018", "Shooter"," PS3, PS4, PC, XBOX, Nintendo Swich", "Activision","Activision","Frosbite","+16", "50€");
         crearJuego("PUBG","23-03-2017","Battle Royale","Xbox , iOS, Android, PC","Brendan Greene","Bluehole Studio, PUBG Corporation","Unreal Engine 4","+16","30€");
         crearJuego("Dirt3","24-05-2011","Driver","PlayStation 3, Microsoft Windows, Xbox 360, Mac OS clàssic","Codemasters, Feral Interactive","Codemasters, Feral Interactive","EGO","+12","20€");
-        crearJuego("Dirt_Rally","","","","","","","","");
-        crearJuego("CSGO","","","","","","","","");
-        crearJuego("GtaV","","","","","","","","");
-        crearJuego("Far Cry 5","","","","","","","","");
-        crearJuego("Fortnite","","","","","","","","");
-        crearJuego("Overwatch","","","","","","","","");
-        crearJuego("Assasssins Creed Origins","","","","","","","","");
-        crearJuego("Minecraft","","","","","","","","");
-        crearJuego("A Way Out","","","","","","","","");
+//        crearJuego("Dirt_Rally","","","","","","","","");
+//        crearJuego("CSGO","","","","","","","","");
+//        crearJuego("GtaV","","","","","","","","");
+//        crearJuego("Far Cry 5","","","","","","","","");
+//        crearJuego("Fortnite","","","","","","","","");
+//        crearJuego("Overwatch","","","","","","","","");
+//        crearJuego("Assasssins Creed Origins","","","","","","","","");
+//        crearJuego("Minecraft","","","","","","","","");
+//        crearJuego("A Way Out","","","","","","","","");
 
     }
 }

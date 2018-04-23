@@ -22,6 +22,9 @@ public class PantallaAcceso {
             PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
             pantallaPrincipal.mostrar(managerJuego , managerUsuarios);
 
+        }else {
+            PantallaMenuAcceso pantallaMenuAcceso = new PantallaMenuAcceso();
+            pantallaMenuAcceso.mostrar(managerJuego, managerUsuarios);
         }
     }
 }
