@@ -12,13 +12,11 @@ public class PantallaGenero {
 
         System.out.println("Buscar por el genero");
         System.out.println("Deportes");
+        System.out.println("Shooter");
+        System.out.println("Driver");
+        System.out.println("Sandbox");
+        System.out.println("FPS");
         System.out.println("Aventura");
-        System.out.println("Accion");
-        System.out.println("ciencia ficcion");
-        System.out.println("Carreras");
-        System.out.println("Estrategia");
-        System.out.println("Lucha");
-        System.out.println("Simulacion");
         System.out.println("Battle Royale");
         System.out.println("Volver pantalla principal");
 
