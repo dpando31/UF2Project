@@ -11,57 +11,42 @@ public class PantallaGenero {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Buscar por el genero");
-        System.out.println("1.Deporte");
-        System.out.println("2.Aventura");
-        System.out.println("3.Accion");
-        System.out.println("4.ciencia ficcion");
-        System.out.println("5.Carreras");
-        System.out.println("6.Estrategia");
-        System.out.println("7.Lucha");
-        System.out.println("8.Simulacion");
-        System.out.println("9.Arcade");
-        System.out.println("10)Volver pantalla principal");
+        System.out.println("Deportes");
+        System.out.println("Shooter");
+        System.out.println("Driver");
+        System.out.println("Sandbox");
+        System.out.println("FPS");
+        System.out.println("Aventura");
+        System.out.println("Battle Royale");
+        System.out.println("Volver pantalla principal");
 
         System.out.println("Elige un genero");
         String genero = scanner.nextLine();
 
-        if ("1".equals(genero )) {
-            System.out.println("Has elegido deporte");
-
-        } else if ("2".equals(genero )) {
-            System.out.println("Has elegido aventura");
-
-
-        } else if ("3".equals(genero )) {
-            System.out.println("Has elegido accion");
-
-
-        } else if ("4".equals(genero )) {
-            System.out.println("Has elegido ciencia ficcion");
-
-        } else if ("5".equals(genero )) {
-            System.out.println("Has elegido carreras");
-
-
-        } else if ("6".equals(genero )) {
-            System.out.println("Has elegido Estrategia");
-
-
-        } else if ("7".equals(genero )) {
-            System.out.println("Has elegido Lucha");
-
-
-        }  else if ("8".equals(genero )) {
-            System.out.println("Has elegido ciencia Simulacion");
-
-
-        }else if ("9".equals(genero )) {
-            System.out.println("Has elegido Arcade");
-
-
-        }  else if ("10".equals(genero)) {
+        if ("1".equals(genero)) {
             PantallaPrincipal pantallaPrincipal =new PantallaPrincipal();
             pantallaPrincipal.mostrar(managerJuego,managerUsuarios);
+        }
+
+        managerJuego.consultarGenero(genero);
+        boolean valido = managerJuego.consultarGenero(genero);
+
+
+
+        System.out.println("Elige un juego");
+        String juegos = scanner.nextLine();
+        managerJuego.consultarTitulo(juegos);
+        boolean validos = managerJuego.consultarTitulo(juegos);
+        System.out.println("1)Volver pantalla principal");
+        System.out.println("2)Añadir a favoritos ");
+
+        String principal = scanner.nextLine();
+
+        if ("1".equals(principal)) {
+            PantallaPrincipal pantallaPrincipal =new PantallaPrincipal();
+            pantallaPrincipal.mostrar(managerJuego,managerUsuarios);
+        }else{
+            managerJuego.favotirtos(principal);
         }
 
     }

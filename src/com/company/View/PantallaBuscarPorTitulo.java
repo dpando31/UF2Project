@@ -13,16 +13,24 @@ public class PantallaBuscarPorTitulo {
 
         System.out.println("Pon un titulo");
         String titulo = scanner.nextLine();
-        managerJuego.consultar(titulo);
+        managerJuego.consultarTitulo(titulo);
 
-        boolean valido = managerJuego.consultar(titulo);
+        boolean valido = managerJuego.consultarTitulo(titulo);
 
         if(false == (valido)){
             System.out.println("No esta el juego");
-        }else{
-            System.out.println("ya esta ");
-
         }
+        System.out.println("1)volver menu principal");
+        System.out.println("2)Añadir a favoritos ");
+
+
+        String titulos = scanner.nextLine();
+
+        if ("1".equals(titulos)) {
+            PantallaPrincipal pantallaPrincipal =new PantallaPrincipal();
+            pantallaPrincipal.mostrar(managerJuego,managerUsuarios);
+        }
+
 
     }
 }
