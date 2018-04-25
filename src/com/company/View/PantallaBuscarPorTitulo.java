@@ -21,6 +21,9 @@ public class PantallaBuscarPorTitulo {
             System.out.println("No esta el juego");
         }
         System.out.println("1)volver menu principal");
+        System.out.println("2)Añadir a favoritos ");
+
+
         String titulos = scanner.nextLine();
 
         if ("1".equals(titulos)) {
