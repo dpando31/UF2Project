@@ -20,7 +20,7 @@ public class ManagerJuego {
                 System.out.println(juego[i].desarrollador);
                 System.out.println(juego[i].editor);
                 System.out.println(juego[i].motorGrafico);
-                System.out.println(juego[i].pegi);
+                System.out.println(juego[i].PEGI);
                 System.out.println(juego[i].precio);
                 System.out.println(juego[i].valoracion);
 
@@ -41,7 +41,7 @@ public class ManagerJuego {
                 juego[i].desarrollador = desarrollador;
                 juego[i].editor = editor;
                 juego[i].motorGrafico = motorGrafico;
-                juego[i].pegi = pegi;
+                juego[i].PEGI = pegi;
                 juego[i].precio = precio;
                 juego[i].valoracion = valoracion;
 
