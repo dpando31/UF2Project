@@ -88,15 +88,19 @@ public class ManagerJuego {
     public boolean consultarPlataformaTitulo(String plataformatitulo) {
         for (int i = 0; i < juego.length; i++) {
             if(juego[i] != null && juego[i].nombre.equals(plataformatitulo)){
-                System.out.println(juego[i].nombre);
-                System.out.println(juego[i].fechaLanzamiento);
-                System.out.println(juego[i].genero);
-                System.out.println(juego[i].plataforma);
-                System.out.println(juego[i].desarrollador);
-                System.out.println(juego[i].editor);
-                System.out.println(juego[i].motorGrafico);
-                System.out.println(juego[i].pegi);
-                System.out.println(juego[i].precio);
+                System.out.println("-----------------------------------------------------------------------");
+                System.out.println("                  FICHA DEl Juego                                      ");
+                System.out.println("Nombre:               | \t" + juego[i].nombre                           );
+                System.out.println("Plataforma:           | \t" + juego[i].plataforma                       );
+                System.out.println("Desarrollador:        | \t" + juego[i].desarrollador                    );
+                System.out.println("Editor:               | \t" + juego[i].editor                           );
+                System.out.println("Fecha de lanzamiento: | \t" + juego[i].fechaLanzamiento                 );
+                System.out.println("Genero:               | \t" + juego[i].genero                           );
+                System.out.println("Motor Grafico:        | \t" + juego[i].motorGrafico                     );
+                System.out.println("Edad:                 | \t" + juego[i].pegi                             );
+                System.out.println("Precio:               | \t" + juego[i].precio                           );
+                System.out.println("-----------------------------------------------------------------------");
+
                 return true;
             }
         }
