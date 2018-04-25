@@ -22,7 +22,7 @@ public class PantallaUltimos {
                 System.out.println("Fecha de lanzamiento: | \t" + managerJuego.juego[i].fechaLanzamiento    );
                 System.out.println("Genero:               | \t" + managerJuego.juego[i].genero              );
                 System.out.println("Motor Grafico:        | \t" + managerJuego.juego[i].motorGrafico        );
-                System.out.println("Edad:                 | \t" + managerJuego.juego[i].pegi                );
+                System.out.println("Edad:                 | \t" + managerJuego.juego[i].PEGI                );
                 System.out.println("Precio:               | \t" + managerJuego.juego[i].precio              );
                 System.out.println("-----------------------------------------------------------------------");
 
