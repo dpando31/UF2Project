@@ -40,13 +40,15 @@ public class PantallaGenero {
         System.out.println("1)Volver pantalla principal");
         System.out.println("2)Añadir a favoritos ");
 
-        String principal = scanner.nextLine();
+        String nombre = scanner.nextLine();
 
-        if ("1".equals(principal)) {
+        if ("1".equals(nombre)) {
             PantallaPrincipal pantallaPrincipal =new PantallaPrincipal();
             pantallaPrincipal.mostrar(managerJuego,managerUsuarios);
         }else{
-            managerJuego.favotirtos(principal);
+            managerJuego.favotirtos(nombre);
+            PantallaPrincipal pantallaPrincipal =new PantallaPrincipal();
+            pantallaPrincipal.mostrar(managerJuego,managerUsuarios);
         }
 
     }

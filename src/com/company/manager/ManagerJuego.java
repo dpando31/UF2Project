@@ -1,11 +1,14 @@
 package com.company.manager;
 
 
+import com.company.model.Favorito;
 import com.company.model.Videojuego;
+
 
 public class ManagerJuego {
 //    public Videojuego videojuego;
     public Videojuego[] juego = new Videojuego[50];
+    public Favorito[] favoritos= new Favorito[50];
 
 
 
@@ -42,15 +45,6 @@ public class ManagerJuego {
         return false;
     }
 
-    public boolean favotirtos(String principal) {
-        for (int i = 0; i < juego.length; i++) {
-            if(juego[i] != null && juego[i].nombre.equals(principal)){
-                System.out.println(juego[i].nombre);
-            }
-        }
-
-        return false;
-    }
 
     public boolean consultarGeneroTitulo(String juegos) {
         for (int i = 0; i < juego.length; i++) {
@@ -117,6 +111,22 @@ public class ManagerJuego {
         }
         return false;
     }
+
+
+    public boolean favotirtos (String nombre){
+        for (int i = 0; i < favoritos.length; i++) {
+            if(favoritos[i] == null){
+                favoritos[i] = new Favorito();
+                favoritos[i].nombre = nombre;
+                return true;
+            }
+        }
+        return false;
+    }
+
+
+
+
 
     public void crearJuegosIniciales(){
         crearJuego("FIFA","29-09-2017","Deportes"," PS3,PS4, PC , XBOX , Nintendo Swich","EA Sports","Electronic Arts", "Frosbite","+7","60€" );
