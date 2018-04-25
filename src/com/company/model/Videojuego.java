@@ -10,5 +10,6 @@ public class Videojuego {
     public String motorGrafico;
     public String pegi;
     public String precio;
+    public String valoracion;
 }
 

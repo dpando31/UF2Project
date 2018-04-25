@@ -36,10 +36,12 @@ public class PantallaCrearJuego {
         System.out.println("Introducir el precio del videojuego");
         String precio = scanner.nextLine();
 
+        System.out.println("Introducir el precio del videojuego");
+        String valoracion = scanner.nextLine();
 
-        managerJuego.crearJuego(nombre,fechaLanzamiento,genero,plataforma,desarrollador,editor,motorGrafico,pegi,precio);
+        managerJuego.crearJuego(nombre,fechaLanzamiento,genero,plataforma,desarrollador,editor,motorGrafico,pegi,precio,valoracion);
 
-        boolean valido = managerJuego.crearJuego(nombre,fechaLanzamiento,genero,plataforma,desarrollador,editor,motorGrafico,pegi,precio);
+        boolean valido = managerJuego.crearJuego(nombre,fechaLanzamiento,genero,plataforma,desarrollador,editor,motorGrafico,pegi,precio,valoracion);
 
         if(true == (valido)){
             System.out.println("Ya se ha añadido el juego");
