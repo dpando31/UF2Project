@@ -46,7 +46,7 @@ public class PantallaGenero {
             PantallaPrincipal pantallaPrincipal =new PantallaPrincipal();
             pantallaPrincipal.mostrar(managerJuego,managerUsuarios);
         }else{
-            managerJuego.favotirtos(principal);
+            managerJuego.favoritos(principal);
         }
 
     }

@@ -74,5 +74,21 @@ public class ManagerJuego {
         }
         return false;
     }
+
+    public boolean consultarGenero(String genero){
+
+        return false;
+    }
+
+    public boolean consultarPlataformaTitulo(String plataformatitulo) {
+        return false;
+    }
+
+    public boolean consultarPlataforma(String plataforma) {
+        return false;
+    }
+
+    public void favoritos(String principal) {
+    }
 }
 
