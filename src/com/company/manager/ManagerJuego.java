@@ -67,5 +67,12 @@ public class ManagerJuego {
         crearJuego("A Way Out","23-03-2018","Aventura","PlayStation 4, Xbox One, Microsoft Windows","Hazelight Studios","Electronic Arts","Unreal Engine","+16","30€","8");
 
     }
+
+    public boolean consultarTitulo(String titulo) {
+        if (juego.length == titulo.length()){
+            System.out.println(titulo);
+        }
+        return false;
+    }
 }
 
