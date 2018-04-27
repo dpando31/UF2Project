@@ -45,7 +45,7 @@ public class PantallaGenero {
         if ("1".equals(nombre)) {
             PantallaPrincipal pantallaPrincipal =new PantallaPrincipal();
             pantallaPrincipal.mostrar(managerJuego,managerUsuarios);
-        }else{
+        }else if ("2".equals(nombre)) {
             managerJuego.favotirtos(nombre);
             PantallaPrincipal pantallaPrincipal =new PantallaPrincipal();
             pantallaPrincipal.mostrar(managerJuego,managerUsuarios);

@@ -33,10 +33,16 @@ public class PantallaPlataforma {
 
         String principal = scanner.nextLine();
 
+
         if ("1".equals(principal)) {
             PantallaPrincipal pantallaPrincipal =new PantallaPrincipal();
             pantallaPrincipal.mostrar(managerJuego,managerUsuarios);
+        }else if ("2".equals(principal)) {
+            managerJuego.favotirtos(principal);
+            PantallaPrincipal pantallaPrincipal =new PantallaPrincipal();
+            pantallaPrincipal.mostrar(managerJuego,managerUsuarios);
         }
+
 
 
     }

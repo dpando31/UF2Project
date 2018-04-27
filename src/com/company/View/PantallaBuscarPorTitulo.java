@@ -26,10 +26,16 @@ public class PantallaBuscarPorTitulo {
 
         String titulos = scanner.nextLine();
 
+
         if ("1".equals(titulos)) {
             PantallaPrincipal pantallaPrincipal =new PantallaPrincipal();
             pantallaPrincipal.mostrar(managerJuego,managerUsuarios);
+        }else if ("2".equals(titulos)) {
+            managerJuego.favotirtos(titulos);
+            PantallaPrincipal pantallaPrincipal =new PantallaPrincipal();
+            pantallaPrincipal.mostrar(managerJuego,managerUsuarios);
         }
+
 
 
     }

@@ -3,27 +3,32 @@ package com.company.View;
 import com.company.manager.ManagerJuego;
 import com.company.manager.ManagerUsuarios;
 
+import java.util.Scanner;
+
 public class PantallaFavoritos {
     public void mostrar(ManagerJuego managerJuego, ManagerUsuarios managerUsuarios){
+        Scanner scanner = new Scanner(System.in);
 
 
-        for  (int i = 0; i<3 && i<managerJuego.juego.length; i++) {
+        for  (int i = 0; i<managerJuego.juego.length; i++) {
+
             if(managerJuego.juego[i] != null) {
                 System.out.println("-----------------------------------------------------------------------");
-                System.out.println("                  FICHA DEl Juego                                      ");
+                System.out.println("                  Pantalla Favoritos                                    ");
                 System.out.println("Nombre:               | \t" + managerJuego.juego[i].nombre              );
-                System.out.println("Plataforma:           | \t" + managerJuego.juego[i].plataforma          );
-                System.out.println("Desarrollador:        | \t" + managerJuego.juego[i].desarrollador       );
-                System.out.println("Editor:               | \t" + managerJuego.juego[i].editor              );
-                System.out.println("Fecha de lanzamiento: | \t" + managerJuego.juego[i].fechaLanzamiento    );
-                System.out.println("Genero:               | \t" + managerJuego.juego[i].genero              );
-                System.out.println("Motor Grafico:        | \t" + managerJuego.juego[i].motorGrafico        );
-                System.out.println("Edad:                 | \t" + managerJuego.juego[i].pegi                );
-                System.out.println("Precio:               | \t" + managerJuego.juego[i].precio              );
+                System.out.println("                    1)Menu principal                                    ");
                 System.out.println("-----------------------------------------------------------------------");
 
             }
         }
+        String favoritos = scanner.nextLine();
+
+        if ("1".equals(favoritos)) {
+            PantallaPrincipal pantallaPrincipal =new PantallaPrincipal();
+            pantallaPrincipal.mostrar(managerJuego,managerUsuarios);
+        }
+
+
 
     }
 }
