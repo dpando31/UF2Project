@@ -33,7 +33,7 @@ public class ManagerJuego {
 
     public boolean consultarGenero(String genero) {
         for (int i = 0; i < videojuegos.length; i++) {
-            if (videojuegos[i] != null && videojuegos[i].genero.equals(genero)) {
+            if (videojuegos[i] != null && videojuegos[i].genero.contains(genero)) {
                 System.out.println(videojuegos[i].nombre);
             }
         }
@@ -43,7 +43,7 @@ public class ManagerJuego {
 
     public boolean favoritos(String principal) {
         for (int i = 0; i < favoritos.length; i++) {
-            if (videojuegos[i] != null && favoritos[i].nombre.equals(principal)) {
+            if (videojuegos[i] != null && favoritos[i].nombre.contains(principal)) {
                 System.out.println(favoritos[i].nombre);
             }
         }
@@ -54,7 +54,7 @@ public class ManagerJuego {
 
     public boolean consultarPlataforma(String plataforma) {
         for (int i = 0; i < videojuegos.length; i++) {
-            if (videojuegos[i] != null && videojuegos[i].plataforma.equals(plataforma)) {
+            if (videojuegos[i] != null && videojuegos[i].plataforma.contains(plataforma)) {
                 System.out.println(videojuegos[i].nombre);
             }
         }
@@ -65,7 +65,7 @@ public class ManagerJuego {
 
     public boolean consultarPlataformaTitulo(String plataformatitulo) {
         for (int i = 0; i < videojuegos.length; i++) {
-            if (videojuegos[i] != null && videojuegos[i].nombre.equals(plataformatitulo)) {
+            if (videojuegos[i] != null && videojuegos[i].nombre.contains(plataformatitulo)) {
                 System.out.println("-----------------------------------------------------------------------");
                 System.out.println("                  FICHA DEl Juego                                      ");
                 System.out.println("Nombre:               | \t" + videojuegos[i].nombre);
@@ -106,23 +106,23 @@ public class ManagerJuego {
     }
 
     public void crearJuegosIniciales() {
-        crearJuego("FIFA 2017", "29-09-2017", "Deportes", " PS3,PS4, PC , XBOX , Nintendo Swich", "EA Sports", "Electronic Arts", "Frosbite", "+7", "60€");
-        crearJuego("CALL OF DUTY", "29-08-2018", "Shooter", " PS3, PS4, PC, XBOX, Nintendo Swich", "Activision", "Activision", "Frosbite", "+16", "50€");
+        crearJuego("FIFA 2017", "29-09-2017", "Deportes", "PS3, PS4, PC, Xbox 360, Xbox One, Nintendo Switch", "EA Sports", "Electronic Arts", "Frosbite", "+7", "60€");
+        crearJuego("Call of duty Infinite Warfare", "04-11-2016", "Shooter", "PS3, PS4, PC, Xbox 360, Xbox One, Nintendo Switch", "Activision", "Activision", "Frosbite", "+16", "50€");
         crearJuego("PUBG", "23-03-2017", "Battle Royale", "Xbox , iOS, Android, PC", "Brendan Greene", "Bluehole Studio, PUBG Corporation", "Unreal Engine 4", "+16", "30€");
-        crearJuego("Dirt3", "24-05-2011", "Driver", "PlayStation 3, Microsoft Windows, Xbox 360, Mac OS clàssic", "Codemasters, Feral Interactive", "Codemasters, Feral Interactive", "EGO", "+12", "20€");
-        crearJuego("FIFA 2018", "29-09-2018", "Deportes", " PS3, PS4, PC, XBOX, Nintendo Swich", "EA Sports", "Electronic Arts", "Frosbite", "+7", "60€");
-        crearJuego("CALL OF DUTY", "29-08-2018", "Shooter", " PS3, PS4, PC, XBOX, Nintendo Swich", "Activision", "Activision", "Frosbite", "+16", "50€");
+        crearJuego("Dirt3", "24-05-2011", "Driver", "PS3, Microsoft Windows, Xbox 360, Mac OS clàssic", "Codemasters, Feral Interactive", "Codemasters, Feral Interactive", "EGO", "+12", "20€");
+        crearJuego("FIFA 2018", "29-09-2018", "Deportes", "PS3, PS4, PC, XBOX, Nintendo Switch", "EA Sports", "Electronic Arts", "Frosbite", "+7", "60€");
+        crearJuego("Call of duty WWII", "03-11-2017", "Shooter", "PS3, PS4, PC, XBOX, Nintendo Switch", "Activision", "Activision", "Frosbite", "+16", "50€");
         crearJuego("PUBG", "23-03-2017", "Battle Royale", "Xbox , iOS, Android, PC", "Brendan Greene", "Bluehole Studio, PUBG Corporation", "Unreal Engine 4", "+16", "30€");
-        crearJuego("Dirt3", "24-05-2011", "Driver", "PlayStation 3, Microsoft Windows, Xbox 360, Mac OS clàssic", "Codemasters, Feral Interactive", "Codemasters, Feral Interactive", "EGO", "+12", "20€");
-        crearJuego("Dirt_Rally", "27-04-2015", "Driver", "PlayStation 4, Xbox One, Microsoft Windows, Linux, Mac OS clàssic", "Codemasters", "Codemasters", "EGO", "+12", "20€");
+        crearJuego("Dirt3", "24-05-2011", "Driver", "PS3, Microsoft Windows, Xbox 360, Mac OS clàssic", "Codemasters, Feral Interactive", "Codemasters, Feral Interactive", "EGO", "+12", "20€");
+        crearJuego("Dirt_Rally", "27-04-2015", "Driver", "PS4, Xbox One, Microsoft Windows, Linux, Mac OS clàssic", "Codemasters", "Codemasters", "EGO", "+12", "20€");
         crearJuego("CSGO", "21-08-2012", "Shooter", "PC", "Valve", "Valve", "Motor Source", "+16", "13€");
-        crearJuego("GtaV", "15-01-2013", "Sandbox", "PlayStation 4, PlayStation 3, Xbox One, Xbox 360, Microsoft Windows", "Rockstar", "Rockstar", "Rockstar Advanced Game Engine", "+18", "60€");
-        crearJuego("Far Cry 5", "27-03-2018", "FPS", "PlayStation 4, Xbox One, Microsoft Windows", "Ubisoft Reflections, Ubisoft Ukraine, Ubisoft Montreal, Ubisoft Toronto", "Ubisoft", "Motor Source", "+18", "60€");
+        crearJuego("GtaV", "15-01-2013", "Sandbox", "PS4, PlayStation 3, Xbox One, Xbox 360, Microsoft Windows", "Rockstar", "Rockstar", "Rockstar Advanced Game Engine", "+18", "60€");
+        crearJuego("Far Cry 5", "27-03-2018", "FPS", "PS4, Xbox One, Microsoft Windows", "Ubisoft Reflections, Ubisoft Ukraine, Ubisoft Montreal, Ubisoft Toronto", "Ubisoft", "Motor Source", "+18", "60€");
         crearJuego("Fortnite", "25-07-2017", "Battle Royale", "PlayStation 4, Xbox One, iOS, Microsoft Windows, Mac OS clàssic", " Epic Games", " Epic Games", "Unreal Engine", "+16", "Free");
-        crearJuego("Overwatch", "24-05-2017", "FPS", "PlayStation 4, Xbox One, Microsoft Windows", "Blizzard Entertainment", "Blizzard Entertainment", "Motor Source", "+16", "40€");
-        crearJuego("Assasssins Creed Origins", "27-10-2017", "Aventura", "PlayStation 4, Xbox One, Microsoft Windows", "Ubisoft", "Ubisoft", "Motor Source", "+16", "60€");
-        crearJuego("Minecraft", "18-10-2011", "Sandbox", "Microsoft Windows, Xbox 360, Android, Linux, PlayStation 3, macOS, Xbox One, PlayStation 4, PS Vita, Windows Phone, iOS, Google Chrome OS, Ouya, Kindle Fire HD, Màquina Virtual Java, Wii U, Windows 10, Project Morpheus i Nintendo NX", "Mojang", "Microsoft", "Java", "+12", "20€");
-        crearJuego("A Way Out", "23-03-2018", "Aventura", "PlayStation 4, Xbox One, Microsoft Windows", "Hazelight Studios", "Electronic Arts", "Unreal Engine", "+16", "30€");
+        crearJuego("Overwatch", "24-05-2017", "FPS", "PS4, Xbox One, Microsoft Windows", "Blizzard Entertainment", "Blizzard Entertainment", "Motor Source", "+16", "40€");
+        crearJuego("Assasssins Creed Origins", "27-10-2017", "Aventura", "PS4, Xbox One, Microsoft Windows", "Ubisoft", "Ubisoft", "Motor Source", "+16", "60€");
+        crearJuego("Minecraft", "18-10-2011", "Sandbox", "Microsoft Windows, Xbox 360, Android, Linux, PS3, macOS, Xbox One, PS4, PS Vita, Windows Phone, iOS, Google Chrome OS, Ouya, Kindle Fire HD, Màquina Virtual Java, Wii U, Nintendo Switch, Windows 10, Project Morpheus", "Mojang", "Microsoft", "Java", "+12", "20€");
+        crearJuego("A Way Out", "23-03-2018", "Aventura", "PS4, Xbox One, Microsoft Windows", "Hazelight Studios", "Electronic Arts", "Unreal Engine", "+16", "30€");
     }
 }
 
