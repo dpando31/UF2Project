@@ -28,6 +28,7 @@ public class ManagerJuego {
                 return true;
             }
         }
+
         return false;
     }
 
