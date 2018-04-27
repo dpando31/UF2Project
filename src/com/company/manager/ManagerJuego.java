@@ -51,23 +51,6 @@ public class ManagerJuego {
         return false;
     }
 
-    public boolean consultarGeneroTitulo(String juegos) {
-        for (int i = 0; i < videojuegos.length; i++) {
-            if (videojuegos[i] != null && videojuegos[i].nombre.equals(juegos)) {
-                System.out.println(videojuegos[i].nombre);
-                System.out.println(videojuegos[i].fechaLanzamiento);
-                System.out.println(videojuegos[i].genero);
-                System.out.println(videojuegos[i].plataforma);
-                System.out.println(videojuegos[i].desarrollador);
-                System.out.println(videojuegos[i].editor);
-                System.out.println(videojuegos[i].motorGrafico);
-                System.out.println(videojuegos[i].PEGI);
-                System.out.println(videojuegos[i].precio);
-                return true;
-            }
-        }
-        return false;
-    }
 
     public boolean consultarPlataforma(String plataforma) {
         for (int i = 0; i < videojuegos.length; i++) {
