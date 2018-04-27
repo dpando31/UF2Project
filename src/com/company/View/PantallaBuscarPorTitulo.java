@@ -31,7 +31,7 @@ public class PantallaBuscarPorTitulo {
             PantallaPrincipal pantallaPrincipal =new PantallaPrincipal();
             pantallaPrincipal.mostrar(managerJuego,managerUsuarios);
         }else if ("2".equals(titulos)) {
-            managerJuego.favotirtos(titulos);
+            managerJuego.favoritos(titulos);
             PantallaPrincipal pantallaPrincipal =new PantallaPrincipal();
             pantallaPrincipal.mostrar(managerJuego,managerUsuarios);
         }

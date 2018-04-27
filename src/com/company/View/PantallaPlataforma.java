@@ -38,7 +38,7 @@ public class PantallaPlataforma {
             PantallaPrincipal pantallaPrincipal =new PantallaPrincipal();
             pantallaPrincipal.mostrar(managerJuego,managerUsuarios);
         }else if ("2".equals(principal)) {
-            managerJuego.favotirtos(principal);
+            managerJuego.favoritos(principal);
             PantallaPrincipal pantallaPrincipal =new PantallaPrincipal();
             pantallaPrincipal.mostrar(managerJuego,managerUsuarios);
         }
