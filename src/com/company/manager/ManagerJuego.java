@@ -120,6 +120,7 @@ public class ManagerJuego {
                 juego[i].motorGrafico = motorGrafico;
                 juego[i].PEGI = pegi;
                 juego[i].precio = precio;
+
                 return true;
             }
         }
