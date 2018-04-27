@@ -20,7 +20,7 @@ public class PantallaBuscarPorTitulo {
         if(false == (valido)){
             System.out.println("No esta el juego");
         }
-        System.out.println("1)volver menu principal");
+        System.out.println("1)Volver menu principal");
         System.out.println("2)Añadir a favoritos ");
 
 

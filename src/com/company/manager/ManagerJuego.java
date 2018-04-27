@@ -1,14 +1,11 @@
 package com.company.manager;
 
 
-import com.company.model.Favorito;
 import com.company.model.Videojuego;
-
 
 public class ManagerJuego {
 //    public Videojuego videojuego;
     public Videojuego[] juego = new Videojuego[50];
-    public Favorito[] favoritos= new Favorito[50];
 
 
 
@@ -16,15 +13,19 @@ public class ManagerJuego {
     public boolean consultarTitulo(String titulo) {
         for (int i = 0; i < juego.length; i++) {
             if(juego[i] != null && juego[i].nombre.equals(titulo)){
-                System.out.println(juego[i].nombre);
-                System.out.println(juego[i].fechaLanzamiento);
-                System.out.println(juego[i].genero);
-                System.out.println(juego[i].plataforma);
-                System.out.println(juego[i].desarrollador);
-                System.out.println(juego[i].editor);
-                System.out.println(juego[i].motorGrafico);
-                System.out.println(juego[i].pegi);
-                System.out.println(juego[i].precio);
+
+                System.out.println("-----------------------------------------------------------------------");
+                System.out.println("                  FICHA DEl Juego                                      ");
+                System.out.println("Nombre:               | \t" + juego[i].nombre                           );
+                System.out.println("Plataforma:           | \t" + juego[i].plataforma                       );
+                System.out.println("Desarrollador:        | \t" + juego[i].desarrollador                    );
+                System.out.println("Editor:               | \t" + juego[i].editor                           );
+                System.out.println("Fecha de lanzamiento: | \t" + juego[i].fechaLanzamiento                 );
+                System.out.println("Genero:               | \t" + juego[i].genero                           );
+                System.out.println("Motor Grafico:        | \t" + juego[i].motorGrafico                     );
+                System.out.println("Edad:                 | \t" + juego[i].pegi                             );
+                System.out.println("Precio:               | \t" + juego[i].precio                           );
+                System.out.println("-----------------------------------------------------------------------");
 
                 return true;
             }
@@ -45,6 +46,15 @@ public class ManagerJuego {
         return false;
     }
 
+    public boolean favotirtos(String principal) {
+        for (int i = 0; i < juego.length; i++) {
+            if(juego[i] != null && juego[i].nombre.equals(principal)){
+                System.out.println(juego[i].nombre);
+            }
+        }
+
+        return false;
+    }
 
     public boolean consultarGeneroTitulo(String juegos) {
         for (int i = 0; i < juego.length; i++) {
@@ -56,7 +66,7 @@ public class ManagerJuego {
                 System.out.println(juego[i].desarrollador);
                 System.out.println(juego[i].editor);
                 System.out.println(juego[i].motorGrafico);
-                System.out.println(juego[i].pegi);
+                System.out.println(juego[i].PEGI);
                 System.out.println(juego[i].precio);
                 return true;
             }
@@ -78,15 +88,19 @@ public class ManagerJuego {
     public boolean consultarPlataformaTitulo(String plataformatitulo) {
         for (int i = 0; i < juego.length; i++) {
             if(juego[i] != null && juego[i].nombre.equals(plataformatitulo)){
-                System.out.println(juego[i].nombre);
-                System.out.println(juego[i].fechaLanzamiento);
-                System.out.println(juego[i].genero);
-                System.out.println(juego[i].plataforma);
-                System.out.println(juego[i].desarrollador);
-                System.out.println(juego[i].editor);
-                System.out.println(juego[i].motorGrafico);
-                System.out.println(juego[i].pegi);
-                System.out.println(juego[i].precio);
+                System.out.println("-----------------------------------------------------------------------");
+                System.out.println("                  FICHA DEl Juego                                      ");
+                System.out.println("Nombre:               | \t" + juego[i].nombre                           );
+                System.out.println("Plataforma:           | \t" + juego[i].plataforma                       );
+                System.out.println("Desarrollador:        | \t" + juego[i].desarrollador                    );
+                System.out.println("Editor:               | \t" + juego[i].editor                           );
+                System.out.println("Fecha de lanzamiento: | \t" + juego[i].fechaLanzamiento                 );
+                System.out.println("Genero:               | \t" + juego[i].genero                           );
+                System.out.println("Motor Grafico:        | \t" + juego[i].motorGrafico                     );
+                System.out.println("Edad:                 | \t" + juego[i].pegi                             );
+                System.out.println("Precio:               | \t" + juego[i].precio                           );
+                System.out.println("-----------------------------------------------------------------------");
+
                 return true;
             }
         }
@@ -104,29 +118,14 @@ public class ManagerJuego {
                 juego[i].desarrollador = desarrollador;
                 juego[i].editor = editor;
                 juego[i].motorGrafico = motorGrafico;
-                juego[i].pegi = pegi;
+                juego[i].PEGI = pegi;
                 juego[i].precio = precio;
+
                 return true;
             }
         }
         return false;
     }
-
-
-    public boolean favotirtos (String nombre){
-        for (int i = 0; i < favoritos.length; i++) {
-            if(favoritos[i] == null){
-                favoritos[i] = new Favorito();
-                favoritos[i].nombre = nombre;
-                return true;
-            }
-        }
-        return false;
-    }
-
-
-
-
 
     public void crearJuegosIniciales(){
         crearJuego("FIFA","29-09-2017","Deportes"," PS3,PS4, PC , XBOX , Nintendo Swich","EA Sports","Electronic Arts", "Frosbite","+7","60€" );
@@ -146,6 +145,29 @@ public class ManagerJuego {
         crearJuego("Assasssins Creed Origins", "27-10-2017", "Aventura", "PlayStation 4, Xbox One, Microsoft Windows", "Ubisoft", "Ubisoft", "Motor Source", "+16", "60€");
         crearJuego("Minecraft", "18-10-2011", "Sandbox", "Microsoft Windows, Xbox 360, Android, Linux, PlayStation 3, macOS, Xbox One, PlayStation 4, PS Vita, Windows Phone, iOS, Google Chrome OS, Ouya, Kindle Fire HD, Màquina Virtual Java, Wii U, Windows 10, Project Morpheus i Nintendo NX", "Mojang", "Microsoft", "Java", "+12", "20€");
         crearJuego("A Way Out", "23-03-2018", "Aventura", "PlayStation 4, Xbox One, Microsoft Windows", "Hazelight Studios", "Electronic Arts", "Unreal Engine", "+16", "30€");
+    }
+
+    public boolean consultarTitulo(String titulo) {
+        if (juego.length == titulo.length()){
+            System.out.println(titulo);
+        }
+        return false;
+    }
+
+    public boolean consultarGenero(String genero){
+
+        return false;
+    }
+
+    public boolean consultarPlataformaTitulo(String plataformatitulo) {
+        return false;
+    }
+
+    public boolean consultarPlataforma(String plataforma) {
+        return false;
+    }
+
+    public void favoritos(String principal) {
     }
 }
 
