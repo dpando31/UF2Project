@@ -8,7 +8,7 @@ public class Videojuego {
     public String desarrollador;
     public String editor;
     public String motorGrafico;
-    public String pegi;
+    public String PEGI;
     public String precio;
     public String valoracion;
 }

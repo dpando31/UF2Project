@@ -66,7 +66,7 @@ public class ManagerJuego {
                 System.out.println(juego[i].desarrollador);
                 System.out.println(juego[i].editor);
                 System.out.println(juego[i].motorGrafico);
-                System.out.println(juego[i].pegi);
+                System.out.println(juego[i].PEGI);
                 System.out.println(juego[i].precio);
                 return true;
             }
@@ -118,7 +118,7 @@ public class ManagerJuego {
                 juego[i].desarrollador = desarrollador;
                 juego[i].editor = editor;
                 juego[i].motorGrafico = motorGrafico;
-                juego[i].pegi = pegi;
+                juego[i].PEGI = pegi;
                 juego[i].precio = precio;
                 return true;
             }
@@ -144,6 +144,29 @@ public class ManagerJuego {
         crearJuego("Assasssins Creed Origins", "27-10-2017", "Aventura", "PlayStation 4, Xbox One, Microsoft Windows", "Ubisoft", "Ubisoft", "Motor Source", "+16", "60€");
         crearJuego("Minecraft", "18-10-2011", "Sandbox", "Microsoft Windows, Xbox 360, Android, Linux, PlayStation 3, macOS, Xbox One, PlayStation 4, PS Vita, Windows Phone, iOS, Google Chrome OS, Ouya, Kindle Fire HD, Màquina Virtual Java, Wii U, Windows 10, Project Morpheus i Nintendo NX", "Mojang", "Microsoft", "Java", "+12", "20€");
         crearJuego("A Way Out", "23-03-2018", "Aventura", "PlayStation 4, Xbox One, Microsoft Windows", "Hazelight Studios", "Electronic Arts", "Unreal Engine", "+16", "30€");
+    }
+
+    public boolean consultarTitulo(String titulo) {
+        if (juego.length == titulo.length()){
+            System.out.println(titulo);
+        }
+        return false;
+    }
+
+    public boolean consultarGenero(String genero){
+
+        return false;
+    }
+
+    public boolean consultarPlataformaTitulo(String plataformatitulo) {
+        return false;
+    }
+
+    public boolean consultarPlataforma(String plataforma) {
+        return false;
+    }
+
+    public void favoritos(String principal) {
     }
 }
 
