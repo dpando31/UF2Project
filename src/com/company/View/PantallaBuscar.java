@@ -28,7 +28,8 @@ public class PantallaBuscar {
         } else if ("c" .equals(opcion)){
             PantallaBuscarPorTitulo pantallaBuscarPorTitulo = new PantallaBuscarPorTitulo();
             pantallaBuscarPorTitulo.mostrar(managerJuego,managerUsuarios);
-        }else if ("d".equals(opcion)) {
+
+        } else if ("d".equals(opcion)) {
             PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
             pantallaPrincipal.mostrar(managerJuego, managerUsuarios);
         }
