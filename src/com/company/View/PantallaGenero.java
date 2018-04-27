@@ -29,14 +29,13 @@ public class PantallaGenero {
         }
 
         managerJuego.consultarGenero(genero);
-        boolean valido = managerJuego.consultarGenero(genero);
 
 
 
-        System.out.println("Elige un juego");
+        System.out.println("Elige un videojuegos");
         String juegos = scanner.nextLine();
         managerJuego.consultarTitulo(juegos);
-        boolean validos = managerJuego.consultarTitulo(juegos);
+
         System.out.println("1)Volver pantalla principal");
         System.out.println("2)Añadir a favoritos ");
 
@@ -45,9 +44,10 @@ public class PantallaGenero {
         if ("1".equals(principal)) {
             PantallaPrincipal pantallaPrincipal =new PantallaPrincipal();
             pantallaPrincipal.mostrar(managerJuego,managerUsuarios);
-        }else{
+        }else if ("2".equals(principal)) {
             managerJuego.favoritos(principal);
+            PantallaPrincipal pantallaPrincipal =new PantallaPrincipal();
+            pantallaPrincipal.mostrar(managerJuego,managerUsuarios);
         }
-
     }
 }

@@ -10,17 +10,17 @@ public class PantallaFavoritos {
         Scanner scanner = new Scanner(System.in);
 
 
-        for  (int i = 0; i<managerJuego.juego.length; i++) {
+        for  (int i = 0; i<managerJuego.favoritos.length; i++) {
 
-            if(managerJuego.juego[i] != null) {
+            if(managerJuego.favoritos[i] != null) {
                 System.out.println("-----------------------------------------------------------------------");
                 System.out.println("                  Pantalla Favoritos                                    ");
-                System.out.println("Nombre:               | \t" + managerJuego.juego[i].nombre              );
-                System.out.println("                    1)Menu principal                                    ");
+                System.out.println("Nombre:               | \t" + managerJuego.favoritos[i].nombre              );
                 System.out.println("-----------------------------------------------------------------------");
 
             }
         }
+        System.out.println("                    1)Menu principal                                    ");
         String favoritos = scanner.nextLine();
 
         if ("1".equals(favoritos)) {

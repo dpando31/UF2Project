@@ -22,7 +22,7 @@ public class PantallaPlataforma {
         boolean validos = managerJuego.consultarPlataforma(plataforma);
 
 
-        System.out.println("Elige un juego");
+        System.out.println("Elige un videojuegos");
         String plataformatitulo = scanner.nextLine();
         managerJuego.consultarPlataformaTitulo(plataformatitulo);
 

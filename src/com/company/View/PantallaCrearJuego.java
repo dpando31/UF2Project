@@ -44,7 +44,7 @@ public class PantallaCrearJuego {
         boolean valido = managerJuego.crearJuego(nombre,fechaLanzamiento,genero,plataforma,desarrollador,editor,motorGrafico,pegi,precio);
 
         if(true == (valido)){
-            System.out.println("Ya se ha añadido el juego");
+            System.out.println("Ya se ha añadido el videojuegos");
         }else {
             System.out.println("Ya esta");
         }
