@@ -32,20 +32,20 @@ public class ManagerJuego {
     }
 
     public void crearJuegosIniciales() {
-        crearJuego("FIFA 2017", "29-09-2017", "Deportes", " PlayStation 3,PlayStation 4, PC  , Nintendo Switch", "EA Sports", "Electronic Arts", "Frosbite", "+7", "60€","8");
+        crearJuego("FIFA 2017", "29-09-2017", "Deportes", " PlayStation 3,PlayStation 4, PC  , Nintendo Switch", "EA Sports", "Electronic Arts", "Frosbite", "+7", "60€","7");
         crearJuego("CALL OF DUTY", "29-08-2018", "Shooter", " PlayStation 3, PlayStation 4, PC, Nintendo Switch", "Activision", "Activision", "Frosbite", "+16", "50€","8");
-        crearJuego("PUBG", "23-03-2017", "Battle Royale", "PC", "Brendan Greene", "Bluehole Studio, PUBG Corporation", "Unreal Engine 4", "+16", "30€","8");
-        crearJuego("Dirt3", "24-05-2011", "Driver", "PlayStation 3, Xbox 360", "Codemasters, Feral Interactive", "Codemasters, Feral Interactive", "EGO", "+12", "20€","8");
-        crearJuego("FIFA 2018", "29-09-2018", "Deportes", " PlayStation 3, PlayStation 4, PC,Nintendo Switch", "EA Sports", "Electronic Arts", "Frosbite", "+7", "60€","8");
-        crearJuego("Dirt_Rally", "27-04-2015", "Driver", "PlayStation 4, Xbox One", "Codemasters", "Codemasters", "EGO", "+12", "20€","8");
-        crearJuego("CSGO", "21-08-2012", "Shooter", "PC", "Valve", "Valve", "Motor Source", "+16", "13€","8");
-        crearJuego("GtaV", "15-01-2013", "Sandbox", "PlayStation 4, PlayStation 3, Xbox One, Xbox 360", "Rockstar", "Rockstar", "Rockstar Advanced Game Engine", "+18", "60€","8");
+        crearJuego("PUBG", "23-03-2017", "Battle Royale", "PC", "Brendan Greene", "Bluehole Studio, PUBG Corporation", "Unreal Engine 4", "+16", "30€","6");
+        crearJuego("Dirt3", "24-05-2011", "Driver", "PlayStation 3, Xbox 360", "Codemasters, Feral Interactive", "Codemasters, Feral Interactive", "EGO", "+12", "20€","5");
+        crearJuego("FIFA 2018", "29-09-2018", "Deportes", " PlayStation 3, PlayStation 4, PC,Nintendo Switch", "EA Sports", "Electronic Arts", "Frosbite", "+7", "60€","9");
+        crearJuego("Dirt_Rally", "27-04-2015", "Driver", "PlayStation 4, Xbox One", "Codemasters", "Codemasters", "EGO", "+12", "20€","9");
+        crearJuego("CSGO", "21-08-2012", "Shooter", "PC", "Valve", "Valve", "Motor Source", "+16", "13€","6");
+        crearJuego("GtaV", "15-01-2013", "Sandbox", "PlayStation 4, PlayStation 3, Xbox One, Xbox 360", "Rockstar", "Rockstar", "Rockstar Advanced Game Engine", "+18", "60€","6");
         crearJuego("Far Cry 5", "27-03-2018", "FPS", "PlayStation 4, Xbox One", "Ubisoft Reflections, Ubisoft Ukraine, Ubisoft Montreal, Ubisoft Toronto", "Ubisoft", "Motor Source", "+18", "60€","8");
         crearJuego("Fortnite", "25-07-2017", "Battle Royale", "PlayStation 4, Xbox One", " Epic Games", " Epic Games", "Unreal Engine", "+16", "Free","8");
-        crearJuego("Overwatch", "24-05-2017", "FPS", "PlayStation 4, Xbox One", "Blizzard Entertainment", "Blizzard Entertainment", "Motor Source", "+16", "40€","8");
-        crearJuego("Assasssins Creed Origins", "27-10-2017", "Aventura", "PlayStation 4, Xbox One", "Ubisoft", "Ubisoft", "Motor Source", "+16", "60€","8");
-        crearJuego("Minecraft", "18-10-2011", "Sandbox", "Xbox 360, PlayStation 3, Xbox One, PlayStation 4, PS Vita, Wii U", "Mojang", "Microsoft", "Java", "+12", "20€","8");
-        crearJuego("A Way Out", "23-03-2018", "Aventura", "PlayStation 4, Xbox One", "Hazelight Studios", "Electronic Arts", "Unreal Engine", "+16", "30€","8");
+        crearJuego("Overwatch", "24-05-2017", "FPS", "PlayStation 4, Xbox One", "Blizzard Entertainment", "Blizzard Entertainment", "Motor Source", "+16", "40€","9");
+        crearJuego("Assasssins Creed Origins", "27-10-2017", "Aventura", "PlayStation 4, Xbox One", "Ubisoft", "Ubisoft", "Motor Source", "+16", "60€","7");
+        crearJuego("Minecraft", "18-10-2011", "Sandbox", "Xbox 360, PlayStation 3, Xbox One, PlayStation 4, PS Vita, Wii U", "Mojang", "Microsoft", "Java", "+12", "20€","6");
+        crearJuego("A Way Out", "23-03-2018", "Aventura", "PlayStation 4, Xbox One", "Hazelight Studios", "Electronic Arts", "Unreal Engine", "+16", "30€","5");
     }
 
 
