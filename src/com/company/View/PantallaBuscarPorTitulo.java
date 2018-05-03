@@ -30,34 +30,66 @@ public class PantallaBuscarPorTitulo {
             System.out.println("Motor Grafico:        | \t" + lista[i].motorGrafico);
             System.out.println("Edad:                 | \t" + lista[i].PEGI);
             System.out.println("Precio:               | \t" + lista[i].precio);
+            System.out.println("Valoracion :          | \t" + managerJuego.videojuegos[i].valoracion             );
+
             System.out.println("-----------------------------------------------------------------------");
         }
 
 
         if(lista.length == 0){
             System.out.println("No hay resultados");
-        }
-
-
-        System.out.println("1)Volver menu principal");
-        System.out.println("2)Añadir a favoritos ");
-
-
-        String titulos = scanner.nextLine();
-
-
-        if ("1".equals(titulos)) {
-            PantallaPrincipal pantallaPrincipal =new PantallaPrincipal();
-            pantallaPrincipal.mostrar(managerJuego,managerUsuarios);
-        }else if ("2".equals(titulos)) {
-            managerJuego.favoritos(titulos);
-            boolean validos = managerJuego.favoritos(titulo);
-
             PantallaPrincipal pantallaPrincipal =new PantallaPrincipal();
             pantallaPrincipal.mostrar(managerJuego,managerUsuarios);
         }
 
 
+        System.out.println("1)Volver pantalla principal");
+        System.out.println("2)Volver pantalla de buscar ");
+        System.out.println("3)Volver pantalla principal i Añadir a favoritos ");
+        System.out.println("4)Volver pantalla buscar i Añadir a favoritos ");
+
+        String principal = scanner.nextLine();
+
+        if ("1".equals(principal)) {
+            PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
+            pantallaPrincipal.mostrar(managerJuego, managerUsuarios);
+        } else if ("2".equals(principal)) {
+            PantallaBuscar pantallaBuscar = new PantallaBuscar();
+            pantallaBuscar.mostrar(managerJuego, managerUsuarios);
+        } else if ("3".equals(principal)) {
+            managerJuego.favoritos(titulo);
+            PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
+            pantallaPrincipal.mostrar(managerJuego, managerUsuarios);
+        } else if ("4".equals(principal)) {
+            managerJuego.favoritos(titulo);
+            PantallaBuscar pantallaBuscar = new PantallaBuscar();
+            pantallaBuscar.mostrar(managerJuego, managerUsuarios);
+        } else {
+            System.out.println("Error opcion no valida");
+            System.out.println("1)Volver pantalla principal");
+            System.out.println("2)Volver pantalla de buscar ");
+            System.out.println("3)Volver pantalla principal i Añadir a favoritos ");
+            System.out.println("4)Volver pantalla buscar i Añadir a favoritos ");
+
+            String principals = scanner.nextLine();
+
+            if ("1".equals(principals)) {
+                PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
+                pantallaPrincipal.mostrar(managerJuego, managerUsuarios);
+            } else if ("2".equals(principals)) {
+                PantallaBuscar pantallaBuscar = new PantallaBuscar();
+                pantallaBuscar.mostrar(managerJuego, managerUsuarios);
+            } else if ("3".equals(principals)) {
+                managerJuego.favoritos(titulo);
+                PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
+                pantallaPrincipal.mostrar(managerJuego, managerUsuarios);
+            } else if ("4".equals(principals)) {
+                managerJuego.favoritos(titulo);
+                PantallaBuscar pantallaBuscar = new PantallaBuscar();
+                pantallaBuscar.mostrar(managerJuego, managerUsuarios);
+            }
+
+        }
 
     }
 }

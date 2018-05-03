@@ -3,6 +3,8 @@ package com.company.View;
 import com.company.manager.ManagerJuego;
 import com.company.manager.ManagerUsuarios;
 
+import java.util.Scanner;
+
 public class PantallaUltimos {
     public void mostrar(ManagerJuego managerJuego, ManagerUsuarios managerUsuarios) {
         System.out.println("Eston son los ultimos juegos");
@@ -21,9 +23,28 @@ public class PantallaUltimos {
                 System.out.println("Motor Grafico:        | \t" + managerJuego.videojuegos[i].motorGrafico        );
                 System.out.println("Edad:                 | \t" + managerJuego.videojuegos[i].PEGI                );
                 System.out.println("Precio:               | \t" + managerJuego.videojuegos[i].precio              );
+                System.out.println("Valoracion :          | \t" + managerJuego.videojuegos[i].valoracion             );
                 System.out.println("-----------------------------------------------------------------------");
 
             }
         }
+        System.out.println("1)Volver pantalla principal");
+        Scanner scanner = new Scanner(System.in);
+        String principal = scanner.nextLine();
+
+
+        if ("1".equals(principal)) {
+            PantallaPrincipal pantallaPrincipal =new PantallaPrincipal();
+            pantallaPrincipal.mostrar(managerJuego,managerUsuarios);
+        }else{
+            System.out.println("Error opcion no valida");
+            System.out.println("1)Volver pantalla principal");
+            String principals = scanner.nextLine();
+            if ("1".equals(principals)) {
+                PantallaPrincipal pantallaPrincipal =new PantallaPrincipal();
+                pantallaPrincipal.mostrar(managerJuego,managerUsuarios);
+            }
+        }
+
     }
 }

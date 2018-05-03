@@ -17,21 +17,26 @@ public class PantallaBuscar {
 
         String opcion = scanner.nextLine();
 
-        if ("a" .equals(opcion)){
+        if ("a" .equals(opcion)|| "A".equals(opcion)){
         PantallaGenero pantallaGenero =new PantallaGenero();
         PantallaGenero.mostrar(managerJuego,managerUsuarios);
 
-        } else if ("b" .equals(opcion)){
+        } else if ("b" .equals(opcion)|| "B".equals(opcion)){
             PantallaPlataforma pantallaPlataforma =new PantallaPlataforma();
             pantallaPlataforma.mostrar(managerJuego,managerUsuarios);
 
-        } else if ("c" .equals(opcion)){
+        } else if ("c" .equals(opcion)|| "C".equals(opcion)){
             PantallaBuscarPorTitulo pantallaBuscarPorTitulo = new PantallaBuscarPorTitulo();
             pantallaBuscarPorTitulo.mostrar(managerJuego,managerUsuarios);
 
-        } else if ("d".equals(opcion)) {
+        } else if ("d".equals(opcion)|| "D".equals(opcion)) {
             PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
             pantallaPrincipal.mostrar(managerJuego, managerUsuarios);
+        }else{
+            System.out.println("Error opcion no valida");
+            PantallaBuscar pantallaBuscar =new PantallaBuscar();
+            pantallaBuscar.mostrar(managerJuego,managerUsuarios);
+
         }
 
 

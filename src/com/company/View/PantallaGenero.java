@@ -3,51 +3,114 @@ package com.company.View;
 
 import com.company.manager.ManagerJuego;
 import com.company.manager.ManagerUsuarios;
+import com.company.model.Videojuego;
 
 import java.util.Scanner;
 public class PantallaGenero {
 
     public static void mostrar(ManagerJuego managerJuego , ManagerUsuarios managerUsuarios ) {
         Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Buscar por el genero");
-        System.out.println("Deportes");
-        System.out.println("Shooter");
-        System.out.println("Driver");
-        System.out.println("Sandbox");
-        System.out.println("FPS");
-        System.out.println("Aventura");
-        System.out.println("Battle Royale");
-        System.out.println("Volver pantalla principal");
-
-        System.out.println("Elige un genero");
+        System.out.println("                  Buscar por el genero                                     ");
+        System.out.println("                  Deportes                                    ");
+        System.out.println("                  Shooter                                     ");
+        System.out.println("                  Driver                                    ");
+        System.out.println("                  Sandbox                                     ");
+        System.out.println("                  FPS                                      ");
+        System.out.println("                  Aventura                                     ");
+        System.out.println("                  Battle Royale                                      ");
+        System.out.println("                  1)Volver pantalla principal                                    ");
         String genero = scanner.nextLine();
 
         if ("1".equals(genero)) {
-            PantallaPrincipal pantallaPrincipal =new PantallaPrincipal();
-            pantallaPrincipal.mostrar(managerJuego,managerUsuarios);
+            PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
+            pantallaPrincipal.mostrar(managerJuego, managerUsuarios);
         }
 
-        managerJuego.consultarGenero(genero);
 
+        Videojuego[] listagenero = managerJuego.consultarGenero(genero);
+
+        for (int i = 0; i < listagenero.length; i++) {
+            System.out.println("-----------------------------------------------------------------------");
+            System.out.println("                  FICHA DEl Juego                                      ");
+            System.out.println("Nombre:               | \t" + listagenero[i].nombre);
+            System.out.println("-----------------------------------------------------------------------");
+        }
+
+
+        if (listagenero.length == 0) {
+            System.out.println("No hay resultados");
+            PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
+            pantallaPrincipal.mostrar(managerJuego, managerUsuarios);
+        }
 
 
         System.out.println("Elige un videojuegos");
-        String juegos = scanner.nextLine();
-        managerJuego.consultarTitulo(juegos);
+        String titulo = scanner.nextLine();
+        Videojuego[] lista = managerJuego.consultarTitulo(titulo);
+
+        for (int i = 0; i < lista.length; i++) {
+            System.out.println("-----------------------------------------------------------------------");
+            System.out.println("                  FICHA DEl Juego                                      ");
+            System.out.println("Nombre:               | \t" + lista[i].nombre);
+            System.out.println("Plataforma:           | \t" + lista[i].plataforma);
+            System.out.println("Desarrollador:        | \t" + lista[i].desarrollador);
+            System.out.println("Editor:               | \t" + lista[i].editor);
+            System.out.println("Fecha de lanzamiento: | \t" + lista[i].fechaLanzamiento);
+            System.out.println("Genero:               | \t" + lista[i].genero);
+            System.out.println("Motor Grafico:        | \t" + lista[i].motorGrafico);
+            System.out.println("Edad:                 | \t" + lista[i].PEGI);
+            System.out.println("Precio:               | \t" + lista[i].precio);
+            System.out.println("Valoracion :          | \t" + managerJuego.videojuegos[i].valoracion             );
+            System.out.println("-----------------------------------------------------------------------");
+        }
 
         System.out.println("1)Volver pantalla principal");
-        System.out.println("2)Añadir a favoritos ");
+        System.out.println("2)Volver pantalla de buscar ");
+        System.out.println("3)Volver pantalla principal i Añadir a favoritos ");
+        System.out.println("4)Volver pantalla buscar i Añadir a favoritos ");
 
         String principal = scanner.nextLine();
 
         if ("1".equals(principal)) {
-            PantallaPrincipal pantallaPrincipal =new PantallaPrincipal();
-            pantallaPrincipal.mostrar(managerJuego,managerUsuarios);
-        }else if ("2".equals(principal)) {
-            managerJuego.favoritos(principal);
-            PantallaPrincipal pantallaPrincipal =new PantallaPrincipal();
-            pantallaPrincipal.mostrar(managerJuego,managerUsuarios);
+            PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
+            pantallaPrincipal.mostrar(managerJuego, managerUsuarios);
+        } else if ("2".equals(principal)) {
+            PantallaBuscar pantallaBuscar = new PantallaBuscar();
+            pantallaBuscar.mostrar(managerJuego, managerUsuarios);
+        } else if ("3".equals(principal)) {
+            managerJuego.favoritos(titulo);
+            PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
+            pantallaPrincipal.mostrar(managerJuego, managerUsuarios);
+        } else if ("4".equals(principal)) {
+            managerJuego.favoritos(titulo);
+            PantallaBuscar pantallaBuscar = new PantallaBuscar();
+            pantallaBuscar.mostrar(managerJuego, managerUsuarios);
+        } else {
+            System.out.println("Error opcion no valida");
+            System.out.println("1)Volver pantalla principal");
+            System.out.println("2)Volver pantalla de buscar ");
+            System.out.println("3)Volver pantalla principal i Añadir a favoritos ");
+            System.out.println("4)Volver pantalla buscar i Añadir a favoritos ");
+
+            String principals = scanner.nextLine();
+
+            if ("1".equals(principals)) {
+                PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
+                pantallaPrincipal.mostrar(managerJuego, managerUsuarios);
+            } else if ("2".equals(principals)) {
+                PantallaBuscar pantallaBuscar = new PantallaBuscar();
+                pantallaBuscar.mostrar(managerJuego, managerUsuarios);
+            } else if ("3".equals(principals)) {
+                managerJuego.favoritos(titulo);
+                PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
+                pantallaPrincipal.mostrar(managerJuego, managerUsuarios);
+            } else if ("4".equals(principals)) {
+                managerJuego.favoritos(titulo);
+                PantallaBuscar pantallaBuscar = new PantallaBuscar();
+                pantallaBuscar.mostrar(managerJuego, managerUsuarios);
+            }
+
         }
     }
+
 }

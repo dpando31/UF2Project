@@ -13,6 +13,7 @@ public class Main {
         ManagerJuego managerJuego = new ManagerJuego();
         managerJuego.crearJuegosIniciales();
 
+
         ManagerUsuarios managerUsuarios = new ManagerUsuarios();
         managerUsuarios.crearUsuario("a", "a");
 
@@ -20,4 +21,5 @@ public class Main {
         pantallaMenuAcceso.mostrar(managerJuego,managerUsuarios);
 
     }
+
 }
