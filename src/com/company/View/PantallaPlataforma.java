@@ -12,19 +12,23 @@ public class PantallaPlataforma {
         Scanner scanner = new Scanner(System.in);
 
 
-        System.out.println("                  Que plataforma estas buscando?                                  ");
-        System.out.println("                  PC                                    ");
-        System.out.println("                  PlayStation 3                                    ");
-        System.out.println("                  PlayStation 4                                   ");
-        System.out.println("                  Nintendo Switch                                   ");
-        System.out.println("                  Xbox 360                                    ");
-        System.out.println("                  Xbox One                                    ");
-        System.out.println("                  PS Vita                                   ");
-        System.out.println("                  Wii U                                   ");
-        System.out.println("                  1)Volver pantalla principal                                    ");
-
+        System.out.println("Que plataforma estas buscando?                                  ");
+        System.out.println(" -PC                                    ");
+        System.out.println(" -PlayStation 3                                    ");
+        System.out.println(" -PlayStation 4                                   ");
+        System.out.println(" -Nintendo Switch                                   ");
+        System.out.println(" -Xbox 360                                    ");
+        System.out.println(" -Xbox One                                    ");
+        System.out.println(" -PS Vita                                   ");
+        System.out.println(" -Wii U                                   ");
+        System.out.println("1) Volver al buscador");
+        System.out.println("2) Volver pantalla principal");
         String plataforma = scanner.nextLine();
+
         if ("1".equals(plataforma)) {
+            PantallaBuscar pantallaBuscar = new PantallaBuscar();
+            pantallaBuscar.mostrar(managerJuego, managerUsuarios);
+        } else if ("2".equals(plataforma)) {
             PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
             pantallaPrincipal.mostrar(managerJuego, managerUsuarios);
         }

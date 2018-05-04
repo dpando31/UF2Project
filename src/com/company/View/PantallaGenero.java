@@ -10,18 +10,22 @@ public class PantallaGenero {
 
     public static void mostrar(ManagerJuego managerJuego , ManagerUsuarios managerUsuarios ) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("                  Buscar por el genero                                     ");
-        System.out.println("                  Deportes                                    ");
-        System.out.println("                  Shooter                                     ");
-        System.out.println("                  Driver                                    ");
-        System.out.println("                  Sandbox                                     ");
-        System.out.println("                  FPS                                      ");
-        System.out.println("                  Aventura                                     ");
-        System.out.println("                  Battle Royale                                      ");
-        System.out.println("                  1)Volver pantalla principal                                    ");
+        System.out.println("Que tipo de genero estas buscando?");
+        System.out.println(" -Deportes");
+        System.out.println(" -Shooter");
+        System.out.println(" -Driver");
+        System.out.println(" -Sandbox");
+        System.out.println(" -FPS");
+        System.out.println(" -Aventura");
+        System.out.println(" -Battle Royale");
+        System.out.println("1) Volver al buscador");
+        System.out.println("2) Volver pantalla principal");
         String genero = scanner.nextLine();
 
         if ("1".equals(genero)) {
+            PantallaBuscar pantallaBuscar = new PantallaBuscar();
+            pantallaBuscar.mostrar(managerJuego, managerUsuarios);
+        } else if ("2".equals(genero)) {
             PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
             pantallaPrincipal.mostrar(managerJuego, managerUsuarios);
         }
@@ -68,6 +72,7 @@ public class PantallaGenero {
             PantallaBuscar pantallaBuscar = new PantallaBuscar();
             pantallaBuscar.mostrar(managerJuego, managerUsuarios);
         }
+
 
         System.out.println("1)Volver pantalla principal");
         System.out.println("2)Volver pantalla de buscar ");

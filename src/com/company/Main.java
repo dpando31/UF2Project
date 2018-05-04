@@ -4,7 +4,6 @@ import com.company.View.PantallaListarJuego;
 import com.company.View.PantallaMenuAcceso;
 import com.company.View.PantallaPrincipal;
 import com.company.manager.ManagerJuego;
-import com.company.manager.ManagerJuego;
 import com.company.manager.ManagerUsuarios;
 
 public class Main {
