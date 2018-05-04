@@ -13,18 +13,18 @@ public class PantallaPlataforma {
 
 
         System.out.println("                  Que plataforma estas buscando?                                  ");
-        System.out.println("                  1)PC                                    ");
-        System.out.println("                  2)PlayStation 3                                    ");
-        System.out.println("                  3)PlayStation 4                                   ");
-        System.out.println("                  4)Nintendo Switch                                   ");
-        System.out.println("                  5)Xbox 360                                    ");
-        System.out.println("                  6)Xbox One                                    ");
-        System.out.println("                  7)PS Vita                                   ");
-        System.out.println("                  8)Wii U                                   ");
-        System.out.println("                  9)Volver pantalla principal                                    ");
+        System.out.println("                  PC                                    ");
+        System.out.println("                  PlayStation 3                                    ");
+        System.out.println("                  PlayStation 4                                   ");
+        System.out.println("                  Nintendo Switch                                   ");
+        System.out.println("                  Xbox 360                                    ");
+        System.out.println("                  Xbox One                                    ");
+        System.out.println("                  PS Vita                                   ");
+        System.out.println("                  Wii U                                   ");
+        System.out.println("                  1)Volver pantalla principal                                    ");
 
         String plataforma = scanner.nextLine();
-        if ("9".equals(plataforma)) {
+        if ("1".equals(plataforma)) {
             PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
             pantallaPrincipal.mostrar(managerJuego, managerUsuarios);
         }
@@ -40,8 +40,8 @@ public class PantallaPlataforma {
         }
         if(listaplataforma.length == 0){
             System.out.println("No hay resultados");
-            PantallaPrincipal pantallaPrincipal =new PantallaPrincipal();
-            pantallaPrincipal.mostrar(managerJuego,managerUsuarios);
+            PantallaBuscar pantallaBuscar = new PantallaBuscar();
+            pantallaBuscar.mostrar(managerJuego, managerUsuarios);
         }
 
 
@@ -64,6 +64,12 @@ public class PantallaPlataforma {
             System.out.println("Precio:               | \t" + lista[i].precio);
             System.out.println("Valoracion :          | \t" + managerJuego.videojuegos[i].valoracion             );
             System.out.println("-----------------------------------------------------------------------");
+        }
+
+        if(lista.length == 0){
+            System.out.println("No hay resultados");
+            PantallaBuscar pantallaBuscar = new PantallaBuscar();
+            pantallaBuscar.mostrar(managerJuego, managerUsuarios);
         }
 
 

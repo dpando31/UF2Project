@@ -38,8 +38,8 @@ public class PantallaBuscarPorTitulo {
 
         if(lista.length == 0){
             System.out.println("No hay resultados");
-            PantallaPrincipal pantallaPrincipal =new PantallaPrincipal();
-            pantallaPrincipal.mostrar(managerJuego,managerUsuarios);
+            PantallaBuscar pantallaBuscar = new PantallaBuscar();
+            pantallaBuscar.mostrar(managerJuego, managerUsuarios);
         }
 
 

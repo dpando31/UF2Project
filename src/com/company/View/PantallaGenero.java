@@ -39,8 +39,8 @@ public class PantallaGenero {
 
         if (listagenero.length == 0) {
             System.out.println("No hay resultados");
-            PantallaPrincipal pantallaPrincipal = new PantallaPrincipal();
-            pantallaPrincipal.mostrar(managerJuego, managerUsuarios);
+            PantallaBuscar pantallaBuscar = new PantallaBuscar();
+            pantallaBuscar.mostrar(managerJuego, managerUsuarios);
         }
 
 
@@ -62,6 +62,11 @@ public class PantallaGenero {
             System.out.println("Precio:               | \t" + lista[i].precio);
             System.out.println("Valoracion :          | \t" + managerJuego.videojuegos[i].valoracion             );
             System.out.println("-----------------------------------------------------------------------");
+        }
+        if(lista.length == 0){
+            System.out.println("No hay resultados");
+            PantallaBuscar pantallaBuscar = new PantallaBuscar();
+            pantallaBuscar.mostrar(managerJuego, managerUsuarios);
         }
 
         System.out.println("1)Volver pantalla principal");
