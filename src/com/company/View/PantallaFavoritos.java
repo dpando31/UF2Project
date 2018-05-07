@@ -22,7 +22,7 @@ public class PantallaFavoritos {
             }
         }
 
-        System.out.println("Elige un videojuegos");
+        System.out.println("Elige un videojuego");
         String titulo = scanner.nextLine();
 
         Videojuego[] lista = managerJuego.consultarTitulo(titulo);

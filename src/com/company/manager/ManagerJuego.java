@@ -46,7 +46,7 @@ public class ManagerJuego {
         crearJuego("CSGO", "21-08-2012", "Shooter", "PC", "Valve", "Valve", "Motor Source", "+16", "13€","6");
         crearJuego("GtaV", "15-01-2013", "Sandbox", "PlayStation 4, PlayStation 3, Xbox One, Xbox 360", "Rockstar", "Rockstar", "Rockstar Advanced Game Engine", "+18", "60€","6");
         crearJuego("Far Cry 5", "27-03-2018", "FPS", "PlayStation 4, Xbox One", "Ubisoft Reflections, Ubisoft Ukraine, Ubisoft Montreal, Ubisoft Toronto", "Ubisoft", "Motor Source", "+18", "60€","8");
-        crearJuego("Fortnite", "25-07-2017", "Battle Royale", "PlayStation 4, Xbox One", " Epic Games", " Epic Games", "Unreal Engine", "+16", "Free","8");
+        crearJuego("Fortnite", "25-07-2017", "Battle Royale", "PlayStation 4, Xbox One, iOS, PC, Mac OS", " Epic Games", " Epic Games", "Unreal Engine", "+16", "Free","8");
         crearJuego("Overwatch", "24-05-2017", "FPS", "PlayStation 4, Xbox One", "Blizzard Entertainment", "Blizzard Entertainment", "Motor Source", "+16", "40€","9");
         crearJuego("Assasssins Creed Origins", "27-10-2017", "Aventura", "PlayStation 4, Xbox One", "Ubisoft", "Ubisoft", "Motor Source", "+16", "60€","7");
         crearJuego("Minecraft", "18-10-2011", "Sandbox", "Xbox 360, PlayStation 3, Xbox One, PlayStation 4, PS Vita, Wii U", "Mojang", "Microsoft", "Java", "+12", "20€","6");

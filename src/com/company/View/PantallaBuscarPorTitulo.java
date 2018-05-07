@@ -45,8 +45,8 @@ public class PantallaBuscarPorTitulo {
 
         System.out.println("1)Volver pantalla principal");
         System.out.println("2)Volver pantalla de buscar ");
-        System.out.println("3)Volver pantalla principal i Añadir a favoritos ");
-        System.out.println("4)Volver pantalla buscar i Añadir a favoritos ");
+        System.out.println("3)Volver pantalla principal y Añadir a favoritos ");
+        System.out.println("4)Volver pantalla buscar y Añadir a favoritos ");
 
         String principal = scanner.nextLine();
 
@@ -68,8 +68,8 @@ public class PantallaBuscarPorTitulo {
             System.out.println("Error opcion no valida");
             System.out.println("1)Volver pantalla principal");
             System.out.println("2)Volver pantalla de buscar ");
-            System.out.println("3)Volver pantalla principal i Añadir a favoritos ");
-            System.out.println("4)Volver pantalla buscar i Añadir a favoritos ");
+            System.out.println("3)Volver pantalla principal y Añadir a favoritos ");
+            System.out.println("4)Volver pantalla buscar y Añadir a favoritos ");
 
             String principals = scanner.nextLine();
 
