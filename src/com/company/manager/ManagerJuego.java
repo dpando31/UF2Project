@@ -2,12 +2,17 @@ package com.company.manager;
 
 
 import com.company.model.Favorito;
+import com.company.model.Genero;
+import com.company.model.Plataforma;
 import com.company.model.Videojuego;
+import sun.text.bidi.BidiBase;
 
 public class ManagerJuego {
     //    public Videojuego videojuego;
     public Videojuego[] videojuegos = new Videojuego[50];
     public Favorito[] favoritos = new Favorito[50];
+    public Genero[] genero =new Genero[50];
+    public Plataforma[] plataforma =new Plataforma[50];
 
 
     public boolean crearJuego(String nombre, String fechaLanzamiento, String genero, String plataforma, String desarrollador, String editor, String motorGrafico, String pegi, String precio,String valoracion) {
@@ -125,6 +130,50 @@ public class ManagerJuego {
 
         }
         return false;
+    }
+
+    public boolean genero(String titulo) {
+        for (int i = 0; i < genero.length; i++) {
+            if (genero[i] == null) {
+                genero[i] = new Genero();
+                genero[i].genero = titulo;
+                return true;
+            }
+        }
+        return false;
+    }
+
+
+    public boolean plataforma (String titulo) {
+        for (int i = 0; i < plataforma.length; i++) {
+            if (plataforma[i] == null) {
+                plataforma[i] = new Plataforma();
+                plataforma[i].titulo = titulo;
+                return true;
+            }
+        }
+        return false;
+    }
+    public void generolista() {
+        genero("Deportes");
+        genero("Shooter");
+        genero("Driver");
+        genero("Sandbox");
+        genero("FPS");
+        genero("Aventura");
+        genero("Battle Royale");
+    }
+
+
+    public void plataformalista() {
+        plataforma("PC");
+        plataforma("PlayStation 3");
+        plataforma("PlayStation 4");
+        plataforma("Nintendo Switch");
+        plataforma("Xbox 360");
+        plataforma("Xbox One");
+        plataforma("PS Vita");
+        plataforma("Wii U");
     }
 }
 
