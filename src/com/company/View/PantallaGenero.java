@@ -18,6 +18,9 @@ public class PantallaGenero {
 
             }
         }
+
+        System.out.println("Elige el genero");
+
         Scanner scanner = new Scanner(System.in);
 
         String genero = scanner.nextLine();

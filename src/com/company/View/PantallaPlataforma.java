@@ -21,6 +21,8 @@ public class PantallaPlataforma {
 
             }
         }
+        System.out.println("Elige la plataforma");
+
 
         String plataforma = scanner.nextLine();
 
