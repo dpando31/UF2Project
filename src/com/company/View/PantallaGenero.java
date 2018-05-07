@@ -9,18 +9,19 @@ import java.util.Scanner;
 public class PantallaGenero {
 
     public static void mostrar(ManagerJuego managerJuego , ManagerUsuarios managerUsuarios ) {
+        for  (int i = 0; i<managerJuego.genero.length; i++) {
+
+            if(managerJuego.genero[i] != null) {
+
+                System.out.println("genero:               | \t" + managerJuego.genero[i].genero              );
+                System.out.println("-----------------------------------------------------------------------");
+
+            }
+        }
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Que tipo de genero estas buscando?");
-        System.out.println(" -Deportes");
-        System.out.println(" -Shooter");
-        System.out.println(" -Driver");
-        System.out.println(" -Sandbox");
-        System.out.println(" -FPS");
-        System.out.println(" -Aventura");
-        System.out.println(" -Battle Royale");
-        System.out.println("1) Volver al buscador");
-        System.out.println("2) Volver pantalla principal");
+
         String genero = scanner.nextLine();
+
 
         if ("1".equals(genero)) {
             PantallaBuscar pantallaBuscar = new PantallaBuscar();
